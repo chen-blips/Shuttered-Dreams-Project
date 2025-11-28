@@ -21,15 +21,15 @@
         </div>
         <nav class="nav-bar-casing">
           <ul class="nav-bar">
-              <li><a href="home.html">Home</a></li>
+              <li><a href="home.php">Home</a></li>
               <li class="separator"></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="about.php">About</a></li>
               <li class="separator"></li>
-              <li><a href="services.html">Services</a></li>
+              <li><a href="services.php">Services</a></li>
               <li class="separator"></li>
-              <li><a href="photoGallery.html">Photo Gallery</a></li>
+              <li><a href="photoGallery.php">Photo Gallery</a></li>
               <li class="separator"></li>
-              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="contacts.php">Contacts</a></li>
           </ul>
       </nav>
     </header>
@@ -103,4 +103,5 @@
 </footer>
 
 <script src="JS/faqsJava.js"></script>
+
 </html>
