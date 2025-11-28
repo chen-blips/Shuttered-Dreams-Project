@@ -37,51 +37,51 @@
     <main>
         <div class="portfolio-grid">
             <div class="image-placeholder" data-gallery="gallery-1">
-                <img src="images/Portfolio/Bern & Sean/0.jpg" alt="Gallery 1 Thumbnail">
+                <img src="Bern & Sean/0.jpg" alt="Gallery 1 Thumbnail">
                 <div class="placeholder-text"><span>Bern & Sean Wedding</span></div>
             </div>
             <div class="image-placeholder" data-gallery="gallery-2">
-                <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/0.jpg" alt="Gallery 2 Thumbnail">
+                <img src="MAJ & TUBS (Pre Wedding)/0.jpg" alt="Gallery 2 Thumbnail">
                 <div class="placeholder-text"><span>Maj & Tubs Pre-Wedding</span></div>
             </div>
             <div class="image-placeholder" data-gallery="gallery-3">
-                <img src="images/Portfolio/CARRELL & RAY(WEDDING)/0.jpg" alt="Gallery 3 Thumbnail">
+                <img src="CARRELL & RAY(WEDDING)/0.jpg" alt="Gallery 3 Thumbnail">
                 <div class="placeholder-text"><span>Carell & Ray Wedding</span></div>
             </div>
             <div class="image-placeholder" data-gallery="gallery-4">
-                <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/0.jpg" alt="Gallery 4 Thumbnail">
+                <img src="KHARREN & ECHO (WEDDING)/0.jpg" alt="Gallery 4 Thumbnail">
                 <div class="placeholder-text"><span>Kharren & Echo Wedding</span></div>
             </div>
             <div class="image-placeholder" data-gallery="gallery-5">
-                <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/0.jpg" alt="Gallery 5 Thumbnail">
+                <img src="NIKKI & PAUL (WEDDING)/0.jpg" alt="Gallery 5 Thumbnail">
                 <div class="placeholder-text"><span>Nikki & Paul Wedding</span></div>
             </div>
             <div class="image-placeholder" data-gallery="gallery-6">
-                <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/0.jpg" alt="Gallery 6 Thumbnail">
+                <img src="QUINCY & NICK (PRE WEDDING)/0.jpg" alt="Gallery 6 Thumbnail">
                 <div class="placeholder-text"><span>Quincy & Nick Pre-Wedding</span></div>
             </div>
             <div class="image-placeholder" data-gallery="gallery-7">
-                <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/0.jpg" alt="Gallery 7 Thumbnail">
+                <img src="VINCE & NYCA (PRE WEDDING)/0.jpg" alt="Gallery 7 Thumbnail">
                 <div class="placeholder-text"><span>Vince & Nyca Pre-Wedding</span></div>
             </div>
             <div class="image-placeholder" data-gallery="gallery-8">
-                <img src="images/Portfolio/GE & JEAN (WEDDING)/0.jpg" alt="Gallery 8 Thumbnail">
+                <img src="GE & JEAN (WEDDING)/0.jpg" alt="Gallery 8 Thumbnail">
                 <div class="placeholder-text"><span>Ge & Jean Wedding</span></div>
             </div>
             <div class="image-placeholder" data-gallery="gallery-9">
-                <img src="images/Portfolio/Dona & Renz (wedding)/0.jpg" alt="Gallery 9 Thumbnail">
+                <img src="Dona & Renz (wedding)/0.jpg" alt="Gallery 9 Thumbnail">
                 <div class="placeholder-text"><span>Dona & Renz Wedding</span></div>
             </div>
             <div class="image-placeholder" data-gallery="gallery-10">
-                <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/0.jpg" alt="Gallery 10 Thumbnail">
+                <img src="ANDREA  & ANDREW (PRE WEDDING)/0.jpg" alt="Gallery 10 Thumbnail">
                 <div class="placeholder-text"><span>Andrea & Andrew Pre-Wedding</span></div>
             </div>
             <div class="image-placeholder" data-gallery="gallery-11">
-                <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/0.jpg" alt="Gallery 11 Thumbnail">
+                <img src="BIANCA & CRIS (PRENUP)/0.jpg" alt="Gallery 11 Thumbnail">
                 <div class="placeholder-text"><span>Bianca & Cris Prenup</span></div>
             </div>
             <div class="image-placeholder" data-gallery="gallery-12">
-                <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/0.jpg" alt="Gallery 12 Thumbnail">
+                <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/0.jpg" alt="Gallery 12 Thumbnail">
                 <div class="placeholder-text"><span>Madel & Ramzen & Maan & Paul (Twin Wedding)</span></div>
             </div>
         </div>
@@ -90,35 +90,35 @@
             <div class="gallery-content">
                 <span class="close-button">&times;</span>
                 <div class="gallery-column">
-                    <img src="images/Portfolio/Bern & Sean/1.jpg" alt="Photo 1">
-                    <img src="images/Portfolio/Bern & Sean/2.jpg" alt="Photo 2">
-                    <img src="images/Portfolio/Bern & Sean/3.jpg" alt="Photo 3">
-                    <img src="images/Portfolio/Bern & Sean/4.jpg" alt="Photo 4">
-                    <img src="images/Portfolio/Bern & Sean/5.jpg" alt="Photo 5">
-                    <img src="images/Portfolio/Bern & Sean/6.jpg" alt="Photo 6">
-                    <img src="images/Portfolio/Bern & Sean/7.jpg" alt="Photo 7">
-                    <img src="images/Portfolio/Bern & Sean/8.jpg" alt="Photo 8">
-                    <img src="images/Portfolio/Bern & Sean/9.jpg" alt="Photo 9">
-                    <img src="images/Portfolio/Bern & Sean/10.jpg" alt="Photo 10">
-                    <img src="images/Portfolio/Bern & Sean/11.jpg" alt="Photo 11">
-                    <img src="images/Portfolio/Bern & Sean/12.jpg" alt="Photo 12">
-                    <img src="images/Portfolio/Bern & Sean/13.jpg" alt="Photo 13">
-                    <img src="images/Portfolio/Bern & Sean/14.jpg" alt="Photo 14">
-                    <img src="images/Portfolio/Bern & Sean/15.jpg" alt="Photo 15">
-                    <img src="images/Portfolio/Bern & Sean/16.jpg" alt="Photo 16">
-                    <img src="images/Portfolio/Bern & Sean/17.jpg" alt="Photo 17">
-                    <img src="images/Portfolio/Bern & Sean/18.jpg" alt="Photo 18">
-                    <img src="images/Portfolio/Bern & Sean/19.jpg" alt="Photo 19">
-                    <img src="images/Portfolio/Bern & Sean/20.jpg" alt="Photo 20">
-                    <img src="images/Portfolio/Bern & Sean/21.jpg" alt="Photo 21">
-                    <img src="images/Portfolio/Bern & Sean/22.jpg" alt="Photo 22">
-                    <img src="images/Portfolio/Bern & Sean/23.jpg" alt="Photo 23">
-                    <img src="images/Portfolio/Bern & Sean/24.jpg" alt="Photo 24">
-                    <img src="images/Portfolio/Bern & Sean/25.jpg" alt="Photo 25">
-                    <img src="images/Portfolio/Bern & Sean/26.jpg" alt="Photo 26">
-                    <img src="images/Portfolio/Bern & Sean/27.jpg" alt="Photo 27">
-                    <img src="images/Portfolio/Bern & Sean/28.jpg" alt="Photo 28">
-                    <img src="images/Portfolio/Bern & Sean/29.jpg" alt="Photo 29">
+                    <img src="Bern & Sean/1.jpg" alt="Photo 1">
+                    <img src="Bern & Sean/2.jpg" alt="Photo 2">
+                    <img src="Bern & Sean/3.jpg" alt="Photo 3">
+                    <img src="Bern & Sean/4.jpg" alt="Photo 4">
+                    <img src="Bern & Sean/5.jpg" alt="Photo 5">
+                    <img src="Bern & Sean/6.jpg" alt="Photo 6">
+                    <img src="Bern & Sean/7.jpg" alt="Photo 7">
+                    <img src="Bern & Sean/8.jpg" alt="Photo 8">
+                    <img src="Bern & Sean/9.jpg" alt="Photo 9">
+                    <img src="Bern & Sean/10.jpg" alt="Photo 10">
+                    <img src="Bern & Sean/11.jpg" alt="Photo 11">
+                    <img src="Bern & Sean/12.jpg" alt="Photo 12">
+                    <img src="Bern & Sean/13.jpg" alt="Photo 13">
+                    <img src="Bern & Sean/14.jpg" alt="Photo 14">
+                    <img src="Bern & Sean/15.jpg" alt="Photo 15">
+                    <img src="Bern & Sean/16.jpg" alt="Photo 16">
+                    <img src="Bern & Sean/17.jpg" alt="Photo 17">
+                    <img src="Bern & Sean/18.jpg" alt="Photo 18">
+                    <img src="Bern & Sean/19.jpg" alt="Photo 19">
+                    <img src="Bern & Sean/20.jpg" alt="Photo 20">
+                    <img src="Bern & Sean/21.jpg" alt="Photo 21">
+                    <img src="Bern & Sean/22.jpg" alt="Photo 22">
+                    <img src="Bern & Sean/23.jpg" alt="Photo 23">
+                    <img src="Bern & Sean/24.jpg" alt="Photo 24">
+                    <img src="Bern & Sean/25.jpg" alt="Photo 25">
+                    <img src="Bern & Sean/26.jpg" alt="Photo 26">
+                    <img src="Bern & Sean/27.jpg" alt="Photo 27">
+                    <img src="Bern & Sean/28.jpg" alt="Photo 28">
+                    <img src="Bern & Sean/29.jpg" alt="Photo 29">
                 </div>
             </div>
         </div>
@@ -127,26 +127,26 @@
             <div class="gallery-content">
                 <span class="close-button">&times;</span>
                 <div class="gallery-column">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/1.jpg" alt="Photo 1">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/2.jpg" alt="Photo 2">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/3.jpg" alt="Photo 3">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/4.jpg" alt="Photo 4">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/5.jpg" alt="Photo 5">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/6.jpg" alt="Photo 6">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/7.jpg" alt="Photo 7">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/8.jpg" alt="Photo 8">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/9.jpg" alt="Photo 9">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/10.jpg" alt="Photo 10">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/11.jpg" alt="Photo 11">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/12.jpg" alt="Photo 12">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/13.jpg" alt="Photo 13">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/14.jpg" alt="Photo 14">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/15.jpg" alt="Photo 15">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/16.jpg" alt="Photo 16">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/17.jpg" alt="Photo 17">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/18.jpg" alt="Photo 18">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/19.jpg" alt="Photo 19">
-                    <img src="images/Portfolio/MAJ & TUBS (Pre Wedding)/20.jpg" alt="Photo 20">
+                    <img src="MAJ & TUBS (Pre Wedding)/1.jpg" alt="Photo 1">
+                    <img src="MAJ & TUBS (Pre Wedding)/2.jpg" alt="Photo 2">
+                    <img src="MAJ & TUBS (Pre Wedding)/3.jpg" alt="Photo 3">
+                    <img src="MAJ & TUBS (Pre Wedding)/4.jpg" alt="Photo 4">
+                    <img src="MAJ & TUBS (Pre Wedding)/5.jpg" alt="Photo 5">
+                    <img src="MAJ & TUBS (Pre Wedding)/6.jpg" alt="Photo 6">
+                    <img src="MAJ & TUBS (Pre Wedding)/7.jpg" alt="Photo 7">
+                    <img src="MAJ & TUBS (Pre Wedding)/8.jpg" alt="Photo 8">
+                    <img src="MAJ & TUBS (Pre Wedding)/9.jpg" alt="Photo 9">
+                    <img src="MAJ & TUBS (Pre Wedding)/10.jpg" alt="Photo 10">
+                    <img src="MAJ & TUBS (Pre Wedding)/11.jpg" alt="Photo 11">
+                    <img src="MAJ & TUBS (Pre Wedding)/12.jpg" alt="Photo 12">
+                    <img src="MAJ & TUBS (Pre Wedding)/13.jpg" alt="Photo 13">
+                    <img src="MAJ & TUBS (Pre Wedding)/14.jpg" alt="Photo 14">
+                    <img src="MAJ & TUBS (Pre Wedding)/15.jpg" alt="Photo 15">
+                    <img src="MAJ & TUBS (Pre Wedding)/16.jpg" alt="Photo 16">
+                    <img src="MAJ & TUBS (Pre Wedding)/17.jpg" alt="Photo 17">
+                    <img src="MAJ & TUBS (Pre Wedding)/18.jpg" alt="Photo 18">
+                    <img src="MAJ & TUBS (Pre Wedding)/19.jpg" alt="Photo 19">
+                    <img src="MAJ & TUBS (Pre Wedding)/20.jpg" alt="Photo 20">
                 </div>
             </div>
         </div>
@@ -156,29 +156,29 @@
             <div class="gallery-content">
                 <span class="close-button">&times;</span>
                 <div class="gallery-column">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/1.jpg" alt="Photo 1">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/2.jpg" alt="Photo 2">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/3.jpg" alt="Photo 3">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/4.jpg" alt="Photo 4">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/5.jpg" alt="Photo 5">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/6.jpg" alt="Photo 6">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/8.jpg" alt="Photo 8">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/9.jpg" alt="Photo 9">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/10.jpg" alt="Photo 10">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/11.jpg" alt="Photo 11">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/12.jpg" alt="Photo 12">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/13.jpg" alt="Photo 13">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/14.jpg" alt="Photo 14">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/15.jpg" alt="Photo 15">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/16.jpg" alt="Photo 16">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/17.jpg" alt="Photo 17">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/18.jpg" alt="Photo 18">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/19.jpg" alt="Photo 19">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/20.jpg" alt="Photo 20">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/21.jpg" alt="Photo 21">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/22.jpg" alt="Photo 22">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/23.jpg" alt="Photo 23">
-                    <img src="images/Portfolio/CARRELL & RAY(WEDDING)/24.jpg" alt="Photo 24">   
+                    <img src="CARRELL & RAY(WEDDING)/1.jpg" alt="Photo 1">
+                    <img src="CARRELL & RAY(WEDDING)/2.jpg" alt="Photo 2">
+                    <img src="CARRELL & RAY(WEDDING)/3.jpg" alt="Photo 3">
+                    <img src="CARRELL & RAY(WEDDING)/4.jpg" alt="Photo 4">
+                    <img src="CARRELL & RAY(WEDDING)/5.jpg" alt="Photo 5">
+                    <img src="CARRELL & RAY(WEDDING)/6.jpg" alt="Photo 6">
+                    <img src="CARRELL & RAY(WEDDING)/8.jpg" alt="Photo 8">
+                    <img src="CARRELL & RAY(WEDDING)/9.jpg" alt="Photo 9">
+                    <img src="CARRELL & RAY(WEDDING)/10.jpg" alt="Photo 10">
+                    <img src="CARRELL & RAY(WEDDING)/11.jpg" alt="Photo 11">
+                    <img src="CARRELL & RAY(WEDDING)/12.jpg" alt="Photo 12">
+                    <img src="CARRELL & RAY(WEDDING)/13.jpg" alt="Photo 13">
+                    <img src="CARRELL & RAY(WEDDING)/14.jpg" alt="Photo 14">
+                    <img src="CARRELL & RAY(WEDDING)/15.jpg" alt="Photo 15">
+                    <img src="CARRELL & RAY(WEDDING)/16.jpg" alt="Photo 16">
+                    <img src="CARRELL & RAY(WEDDING)/17.jpg" alt="Photo 17">
+                    <img src="CARRELL & RAY(WEDDING)/18.jpg" alt="Photo 18">
+                    <img src="CARRELL & RAY(WEDDING)/19.jpg" alt="Photo 19">
+                    <img src="CARRELL & RAY(WEDDING)/20.jpg" alt="Photo 20">
+                    <img src="CARRELL & RAY(WEDDING)/21.jpg" alt="Photo 21">
+                    <img src="CARRELL & RAY(WEDDING)/22.jpg" alt="Photo 22">
+                    <img src="CARRELL & RAY(WEDDING)/23.jpg" alt="Photo 23">
+                    <img src="CARRELL & RAY(WEDDING)/24.jpg" alt="Photo 24">   
                 </div>
             </div>
         </div>
@@ -187,27 +187,27 @@
             <div class="gallery-content">
                 <span class="close-button">&times;</span>
                 <div class="gallery-column">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/1.jpg" alt="Photo 1">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/2.jpg" alt="Photo 2">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/3.jpg" alt="Photo 3">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/4.jpg" alt="Photo 4">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/5.jpg" alt="Photo 5">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/6.jpg" alt="Photo 6">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/7.jpg" alt="Photo 7">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/8.jpg" alt="Photo 8">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/9.jpg" alt="Photo 9">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/10.jpg" alt="Photo 10">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/11.jpg" alt="Photo 11">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/12.jpg" alt="Photo 12">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/13.jpg" alt="Photo 13">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/14.jpg" alt="Photo 14">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/15.jpg" alt="Photo 15">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/16.jpg" alt="Photo 16">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/17.jpg" alt="Photo 17">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/18.jpg" alt="Photo 18">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/19.jpg" alt="Photo 19">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/20.jpg" alt="Photo 20">
-                    <img src="images/Portfolio/KHARREN & ECHO (WEDDING)/21.jpg" alt="Photo 21">
+                    <img src="KHARREN & ECHO (WEDDING)/1.jpg" alt="Photo 1">
+                    <img src="KHARREN & ECHO (WEDDING)/2.jpg" alt="Photo 2">
+                    <img src="KHARREN & ECHO (WEDDING)/3.jpg" alt="Photo 3">
+                    <img src="KHARREN & ECHO (WEDDING)/4.jpg" alt="Photo 4">
+                    <img src="KHARREN & ECHO (WEDDING)/5.jpg" alt="Photo 5">
+                    <img src="KHARREN & ECHO (WEDDING)/6.jpg" alt="Photo 6">
+                    <img src="KHARREN & ECHO (WEDDING)/7.jpg" alt="Photo 7">
+                    <img src="KHARREN & ECHO (WEDDING)/8.jpg" alt="Photo 8">
+                    <img src="KHARREN & ECHO (WEDDING)/9.jpg" alt="Photo 9">
+                    <img src="KHARREN & ECHO (WEDDING)/10.jpg" alt="Photo 10">
+                    <img src="KHARREN & ECHO (WEDDING)/11.jpg" alt="Photo 11">
+                    <img src="KHARREN & ECHO (WEDDING)/12.jpg" alt="Photo 12">
+                    <img src="KHARREN & ECHO (WEDDING)/13.jpg" alt="Photo 13">
+                    <img src="KHARREN & ECHO (WEDDING)/14.jpg" alt="Photo 14">
+                    <img src="KHARREN & ECHO (WEDDING)/15.jpg" alt="Photo 15">
+                    <img src="KHARREN & ECHO (WEDDING)/16.jpg" alt="Photo 16">
+                    <img src="KHARREN & ECHO (WEDDING)/17.jpg" alt="Photo 17">
+                    <img src="KHARREN & ECHO (WEDDING)/18.jpg" alt="Photo 18">
+                    <img src="KHARREN & ECHO (WEDDING)/19.jpg" alt="Photo 19">
+                    <img src="KHARREN & ECHO (WEDDING)/20.jpg" alt="Photo 20">
+                    <img src="KHARREN & ECHO (WEDDING)/21.jpg" alt="Photo 21">
                 </div>
             </div>
         </div>
@@ -216,32 +216,32 @@
             <div class="gallery-content">
                 <span class="close-button">&times;</span>
                 <div class="gallery-column">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/1.jpg" alt="Photo 1">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/1.jpg" alt="Photo 1">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/2.jpg" alt="Photo 2">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/3.jpg" alt="Photo 3">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/4.jpg" alt="Photo 4">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/5.jpg" alt="Photo 5">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/6.jpg" alt="Photo 6">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/7.jpg" alt="Photo 7">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/8.jpg" alt="Photo 8">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/9.jpg" alt="Photo 9">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/10.jpg" alt="Photo 10">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/11.jpg" alt="Photo 11">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/12.jpg" alt="Photo 12">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/13.jpg" alt="Photo 13">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/14.jpg" alt="Photo 14">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/15.jpg" alt="Photo 15">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/16.jpg" alt="Photo 16">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/17.jpg" alt="Photo 17">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/18.jpg" alt="Photo 18">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/19.jpg" alt="Photo 19">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/20.jpg" alt="Photo 20">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/21.jpg" alt="Photo 21">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/22.jpg" alt="Photo 22">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/23.jpg" alt="Photo 23">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/24.jpg" alt="Photo 24">
-                    <img src="images/Portfolio/NIKKI & PAUL (WEDDING)/25.jpg" alt="Photo 25">
+                    <img src="NIKKI & PAUL (WEDDING)/1.jpg" alt="Photo 1">
+                    <img src="NIKKI & PAUL (WEDDING)/1.jpg" alt="Photo 1">
+                    <img src="NIKKI & PAUL (WEDDING)/2.jpg" alt="Photo 2">
+                    <img src="NIKKI & PAUL (WEDDING)/3.jpg" alt="Photo 3">
+                    <img src="NIKKI & PAUL (WEDDING)/4.jpg" alt="Photo 4">
+                    <img src="NIKKI & PAUL (WEDDING)/5.jpg" alt="Photo 5">
+                    <img src="NIKKI & PAUL (WEDDING)/6.jpg" alt="Photo 6">
+                    <img src="NIKKI & PAUL (WEDDING)/7.jpg" alt="Photo 7">
+                    <img src="NIKKI & PAUL (WEDDING)/8.jpg" alt="Photo 8">
+                    <img src="NIKKI & PAUL (WEDDING)/9.jpg" alt="Photo 9">
+                    <img src="NIKKI & PAUL (WEDDING)/10.jpg" alt="Photo 10">
+                    <img src="NIKKI & PAUL (WEDDING)/11.jpg" alt="Photo 11">
+                    <img src="NIKKI & PAUL (WEDDING)/12.jpg" alt="Photo 12">
+                    <img src="NIKKI & PAUL (WEDDING)/13.jpg" alt="Photo 13">
+                    <img src="NIKKI & PAUL (WEDDING)/14.jpg" alt="Photo 14">
+                    <img src="NIKKI & PAUL (WEDDING)/15.jpg" alt="Photo 15">
+                    <img src="NIKKI & PAUL (WEDDING)/16.jpg" alt="Photo 16">
+                    <img src="NIKKI & PAUL (WEDDING)/17.jpg" alt="Photo 17">
+                    <img src="NIKKI & PAUL (WEDDING)/18.jpg" alt="Photo 18">
+                    <img src="NIKKI & PAUL (WEDDING)/19.jpg" alt="Photo 19">
+                    <img src="NIKKI & PAUL (WEDDING)/20.jpg" alt="Photo 20">
+                    <img src="NIKKI & PAUL (WEDDING)/21.jpg" alt="Photo 21">
+                    <img src="NIKKI & PAUL (WEDDING)/22.jpg" alt="Photo 22">
+                    <img src="NIKKI & PAUL (WEDDING)/23.jpg" alt="Photo 23">
+                    <img src="NIKKI & PAUL (WEDDING)/24.jpg" alt="Photo 24">
+                    <img src="NIKKI & PAUL (WEDDING)/25.jpg" alt="Photo 25">
                 </div>
             </div>
         </div>
@@ -250,30 +250,30 @@
             <div class="gallery-content">
                 <span class="close-button">&times;</span>
                 <div class="gallery-column">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/1.jpg" alt="Photo 1">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/2.jpg" alt="Photo 2">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/3.jpg" alt="Photo 3">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/4.jpg" alt="Photo 4">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/5.jpg" alt="Photo 5">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/7.jpg" alt="Photo 7">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/8.jpg" alt="Photo 8">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/9.jpg" alt="Photo 9">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/10.jpg" alt="Photo 10">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/11.jpg" alt="Photo 11">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/12.jpg" alt="Photo 12">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/13.jpg" alt="Photo 13">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/14.jpg" alt="Photo 14">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/15.jpg" alt="Photo 15">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/16.jpg" alt="Photo 16">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/17.jpg" alt="Photo 17">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/18.jpg" alt="Photo 18">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/19.jpg" alt="Photo 19">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/20.jpg" alt="Photo 20">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/21.jpg" alt="Photo 21">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/22.jpg" alt="Photo 22">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/23.jpg" alt="Photo 23">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/24.jpg" alt="Photo 24">
-                    <img src="images/Portfolio/QUINCY & NICK (PRE WEDDING)/25.jpg" alt="Photo 25">
+                    <img src="QUINCY & NICK (PRE WEDDING)/1.jpg" alt="Photo 1">
+                    <img src="QUINCY & NICK (PRE WEDDING)/2.jpg" alt="Photo 2">
+                    <img src="QUINCY & NICK (PRE WEDDING)/3.jpg" alt="Photo 3">
+                    <img src="QUINCY & NICK (PRE WEDDING)/4.jpg" alt="Photo 4">
+                    <img src="QUINCY & NICK (PRE WEDDING)/5.jpg" alt="Photo 5">
+                    <img src="QUINCY & NICK (PRE WEDDING)/7.jpg" alt="Photo 7">
+                    <img src="QUINCY & NICK (PRE WEDDING)/8.jpg" alt="Photo 8">
+                    <img src="QUINCY & NICK (PRE WEDDING)/9.jpg" alt="Photo 9">
+                    <img src="QUINCY & NICK (PRE WEDDING)/10.jpg" alt="Photo 10">
+                    <img src="QUINCY & NICK (PRE WEDDING)/11.jpg" alt="Photo 11">
+                    <img src="QUINCY & NICK (PRE WEDDING)/12.jpg" alt="Photo 12">
+                    <img src="QUINCY & NICK (PRE WEDDING)/13.jpg" alt="Photo 13">
+                    <img src="QUINCY & NICK (PRE WEDDING)/14.jpg" alt="Photo 14">
+                    <img src="QUINCY & NICK (PRE WEDDING)/15.jpg" alt="Photo 15">
+                    <img src="QUINCY & NICK (PRE WEDDING)/16.jpg" alt="Photo 16">
+                    <img src="QUINCY & NICK (PRE WEDDING)/17.jpg" alt="Photo 17">
+                    <img src="QUINCY & NICK (PRE WEDDING)/18.jpg" alt="Photo 18">
+                    <img src="QUINCY & NICK (PRE WEDDING)/19.jpg" alt="Photo 19">
+                    <img src="QUINCY & NICK (PRE WEDDING)/20.jpg" alt="Photo 20">
+                    <img src="QUINCY & NICK (PRE WEDDING)/21.jpg" alt="Photo 21">
+                    <img src="QUINCY & NICK (PRE WEDDING)/22.jpg" alt="Photo 22">
+                    <img src="QUINCY & NICK (PRE WEDDING)/23.jpg" alt="Photo 23">
+                    <img src="QUINCY & NICK (PRE WEDDING)/24.jpg" alt="Photo 24">
+                    <img src="QUINCY & NICK (PRE WEDDING)/25.jpg" alt="Photo 25">
                 </div>
             </div>
         </div>
@@ -282,31 +282,31 @@
             <div class="gallery-content">
                 <span class="close-button">&times;</span>
                 <div class="gallery-column">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/1.jpg" alt="Photo 1">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/2.jpg" alt="Photo 2">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/3.jpg" alt="Photo 3">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/4.jpg" alt="Photo 4">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/5.jpg" alt="Photo 5">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/6.jpg" alt="Photo 6">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/7.jpg" alt="Photo 7">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/8.jpg" alt="Photo 8">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/9.jpg" alt="Photo 9">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/10.jpg" alt="Photo 10">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/11.jpg" alt="Photo 11">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/12.jpg" alt="Photo 12">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/13.jpg" alt="Photo 13">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/14.jpg" alt="Photo 14">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/15.jpg" alt="Photo 15">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/16.jpg" alt="Photo 16">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/17.jpg" alt="Photo 17">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/18.jpg" alt="Photo 18">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/19.jpg" alt="Photo 19">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/20.jpg" alt="Photo 20">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/21.jpg" alt="Photo 21">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/22.jpg" alt="Photo 22">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/23.jpg" alt="Photo 23">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/24.jpg" alt="Photo 24">
-                    <img src="images/Portfolio/VINCE & NYCA (PRE WEDDING)/25.jpg" alt="Photo 25">
+                    <img src="VINCE & NYCA (PRE WEDDING)/1.jpg" alt="Photo 1">
+                    <img src="VINCE & NYCA (PRE WEDDING)/2.jpg" alt="Photo 2">
+                    <img src="VINCE & NYCA (PRE WEDDING)/3.jpg" alt="Photo 3">
+                    <img src="VINCE & NYCA (PRE WEDDING)/4.jpg" alt="Photo 4">
+                    <img src="VINCE & NYCA (PRE WEDDING)/5.jpg" alt="Photo 5">
+                    <img src="VINCE & NYCA (PRE WEDDING)/6.jpg" alt="Photo 6">
+                    <img src="VINCE & NYCA (PRE WEDDING)/7.jpg" alt="Photo 7">
+                    <img src="VINCE & NYCA (PRE WEDDING)/8.jpg" alt="Photo 8">
+                    <img src="VINCE & NYCA (PRE WEDDING)/9.jpg" alt="Photo 9">
+                    <img src="VINCE & NYCA (PRE WEDDING)/10.jpg" alt="Photo 10">
+                    <img src="VINCE & NYCA (PRE WEDDING)/11.jpg" alt="Photo 11">
+                    <img src="VINCE & NYCA (PRE WEDDING)/12.jpg" alt="Photo 12">
+                    <img src="VINCE & NYCA (PRE WEDDING)/13.jpg" alt="Photo 13">
+                    <img src="VINCE & NYCA (PRE WEDDING)/14.jpg" alt="Photo 14">
+                    <img src="VINCE & NYCA (PRE WEDDING)/15.jpg" alt="Photo 15">
+                    <img src="VINCE & NYCA (PRE WEDDING)/16.jpg" alt="Photo 16">
+                    <img src="VINCE & NYCA (PRE WEDDING)/17.jpg" alt="Photo 17">
+                    <img src="VINCE & NYCA (PRE WEDDING)/18.jpg" alt="Photo 18">
+                    <img src="VINCE & NYCA (PRE WEDDING)/19.jpg" alt="Photo 19">
+                    <img src="VINCE & NYCA (PRE WEDDING)/20.jpg" alt="Photo 20">
+                    <img src="VINCE & NYCA (PRE WEDDING)/21.jpg" alt="Photo 21">
+                    <img src="VINCE & NYCA (PRE WEDDING)/22.jpg" alt="Photo 22">
+                    <img src="VINCE & NYCA (PRE WEDDING)/23.jpg" alt="Photo 23">
+                    <img src="VINCE & NYCA (PRE WEDDING)/24.jpg" alt="Photo 24">
+                    <img src="VINCE & NYCA (PRE WEDDING)/25.jpg" alt="Photo 25">
                 </div>
             </div>
         </div>
@@ -315,26 +315,26 @@
             <div class="gallery-content">
                 <span class="close-button">&times;</span>
                 <div class="gallery-column">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/1.jpg" alt="Photo 1">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/2.jpg" alt="Photo 2">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/3.jpg" alt="Photo 3">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/4.jpg" alt="Photo 4">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/5.jpg" alt="Photo 5">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/6.jpg" alt="Photo 6">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/7.jpg" alt="Photo 7">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/8.jpg" alt="Photo 8">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/9.jpg" alt="Photo 9">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/10.jpg" alt="Photo 10">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/11.jpg" alt="Photo 11">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/12.jpg" alt="Photo 12">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/13.jpg" alt="Photo 13">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/14.jpg" alt="Photo 14">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/15.jpg" alt="Photo 15">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/16.jpg" alt="Photo 16">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/17.jpg" alt="Photo 17">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/18.jpg" alt="Photo 18">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/19.jpg" alt="Photo 19">
-                    <img src="images/Portfolio/GE & JEAN (WEDDING)/20.jpg" alt="Photo 20">
+                    <img src="GE & JEAN (WEDDING)/1.jpg" alt="Photo 1">
+                    <img src="GE & JEAN (WEDDING)/2.jpg" alt="Photo 2">
+                    <img src="GE & JEAN (WEDDING)/3.jpg" alt="Photo 3">
+                    <img src="GE & JEAN (WEDDING)/4.jpg" alt="Photo 4">
+                    <img src="GE & JEAN (WEDDING)/5.jpg" alt="Photo 5">
+                    <img src="GE & JEAN (WEDDING)/6.jpg" alt="Photo 6">
+                    <img src="GE & JEAN (WEDDING)/7.jpg" alt="Photo 7">
+                    <img src="GE & JEAN (WEDDING)/8.jpg" alt="Photo 8">
+                    <img src="GE & JEAN (WEDDING)/9.jpg" alt="Photo 9">
+                    <img src="GE & JEAN (WEDDING)/10.jpg" alt="Photo 10">
+                    <img src="GE & JEAN (WEDDING)/11.jpg" alt="Photo 11">
+                    <img src="GE & JEAN (WEDDING)/12.jpg" alt="Photo 12">
+                    <img src="GE & JEAN (WEDDING)/13.jpg" alt="Photo 13">
+                    <img src="GE & JEAN (WEDDING)/14.jpg" alt="Photo 14">
+                    <img src="GE & JEAN (WEDDING)/15.jpg" alt="Photo 15">
+                    <img src="GE & JEAN (WEDDING)/16.jpg" alt="Photo 16">
+                    <img src="GE & JEAN (WEDDING)/17.jpg" alt="Photo 17">
+                    <img src="GE & JEAN (WEDDING)/18.jpg" alt="Photo 18">
+                    <img src="GE & JEAN (WEDDING)/19.jpg" alt="Photo 19">
+                    <img src="GE & JEAN (WEDDING)/20.jpg" alt="Photo 20">
                 </div>
             </div>
         </div>
@@ -343,28 +343,28 @@
             <div class="gallery-content">
                 <span class="close-button">&times;</span>
                 <div class="gallery-column">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/1.jpg" alt="Photo 1">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/2.jpg" alt="Photo 2">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/3.jpg" alt="Photo 3">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/4.jpg" alt="Photo 4">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/5.jpg" alt="Photo 5">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/6.jpg" alt="Photo 6">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/7.jpg" alt="Photo 7">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/8.jpg" alt="Photo 8">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/9.jpg" alt="Photo 9">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/12.jpg" alt="Photo 12">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/15.jpg" alt="Photo 15">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/16.jpg" alt="Photo 16">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/17.jpg" alt="Photo 17">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/18.jpg" alt="Photo 18">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/19.jpg" alt="Photo 19">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/20.jpg" alt="Photo 20">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/21.jpg" alt="Photo 21">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/22.jpg" alt="Photo 22">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/23.jpg" alt="Photo 23">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/24.jpg" alt="Photo 24">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/25.jpg" alt="Photo 25">
-                    <img src="images/Portfolio/Dona & Renz (wedding)/26.jpg" alt="Photo 26">
+                    <img src="Dona & Renz (wedding)/1.jpg" alt="Photo 1">
+                    <img src="Dona & Renz (wedding)/2.jpg" alt="Photo 2">
+                    <img src="Dona & Renz (wedding)/3.jpg" alt="Photo 3">
+                    <img src="Dona & Renz (wedding)/4.jpg" alt="Photo 4">
+                    <img src="Dona & Renz (wedding)/5.jpg" alt="Photo 5">
+                    <img src="Dona & Renz (wedding)/6.jpg" alt="Photo 6">
+                    <img src="Dona & Renz (wedding)/7.jpg" alt="Photo 7">
+                    <img src="Dona & Renz (wedding)/8.jpg" alt="Photo 8">
+                    <img src="Dona & Renz (wedding)/9.jpg" alt="Photo 9">
+                    <img src="Dona & Renz (wedding)/12.jpg" alt="Photo 12">
+                    <img src="Dona & Renz (wedding)/15.jpg" alt="Photo 15">
+                    <img src="Dona & Renz (wedding)/16.jpg" alt="Photo 16">
+                    <img src="Dona & Renz (wedding)/17.jpg" alt="Photo 17">
+                    <img src="Dona & Renz (wedding)/18.jpg" alt="Photo 18">
+                    <img src="Dona & Renz (wedding)/19.jpg" alt="Photo 19">
+                    <img src="Dona & Renz (wedding)/20.jpg" alt="Photo 20">
+                    <img src="Dona & Renz (wedding)/21.jpg" alt="Photo 21">
+                    <img src="Dona & Renz (wedding)/22.jpg" alt="Photo 22">
+                    <img src="Dona & Renz (wedding)/23.jpg" alt="Photo 23">
+                    <img src="Dona & Renz (wedding)/24.jpg" alt="Photo 24">
+                    <img src="Dona & Renz (wedding)/25.jpg" alt="Photo 25">
+                    <img src="Dona & Renz (wedding)/26.jpg" alt="Photo 26">
                 </div>
             </div>
         </div>
@@ -374,30 +374,30 @@
                 <span class="close-button">&times;</span>
                 <div class="gallery-column">
                     
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/1.jpg" alt="Photo 1">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/2.jpg" alt="Photo 2">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/3.jpg" alt="Photo 3">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/4.jpg" alt="Photo 4">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/5.jpg" alt="Photo 5">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/6.jpg" alt="Photo 6">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/7.jpg" alt="Photo 7">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/8.jpg" alt="Photo 8">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/9.jpg" alt="Photo 9">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/10.jpg" alt="Photo 10">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/11.jpg" alt="Photo 11">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/12.jpg" alt="Photo 12">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/13.jpg" alt="Photo 13">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/14.jpg" alt="Photo 14">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/15.jpg" alt="Photo 15">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/16.jpg" alt="Photo 16">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/17.jpg" alt="Photo 17">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/18.jpg" alt="Photo 18">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/19.jpg" alt="Photo 19">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/20.jpg" alt="Photo 20">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/21.jpg" alt="Photo 21">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/22.jpg" alt="Photo 22">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/23.jpg" alt="Photo 23">
-                    <img src="images/Portfolio/ANDREA  & ANDREW (PRE WEDDING)/24.jpg" alt="Photo 24">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/1.jpg" alt="Photo 1">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/2.jpg" alt="Photo 2">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/3.jpg" alt="Photo 3">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/4.jpg" alt="Photo 4">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/5.jpg" alt="Photo 5">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/6.jpg" alt="Photo 6">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/7.jpg" alt="Photo 7">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/8.jpg" alt="Photo 8">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/9.jpg" alt="Photo 9">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/10.jpg" alt="Photo 10">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/11.jpg" alt="Photo 11">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/12.jpg" alt="Photo 12">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/13.jpg" alt="Photo 13">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/14.jpg" alt="Photo 14">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/15.jpg" alt="Photo 15">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/16.jpg" alt="Photo 16">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/17.jpg" alt="Photo 17">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/18.jpg" alt="Photo 18">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/19.jpg" alt="Photo 19">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/20.jpg" alt="Photo 20">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/21.jpg" alt="Photo 21">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/22.jpg" alt="Photo 22">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/23.jpg" alt="Photo 23">
+                    <img src="ANDREA  & ANDREW (PRE WEDDING)/24.jpg" alt="Photo 24">
                 </div>
             </div>
         </div>
@@ -406,33 +406,33 @@
             <div class="gallery-content">
                 <span class="close-button">&times;</span>
                 <div class="gallery-column">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/0.jpg" alt="Photo 1">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/1.jpg" alt="Photo 2">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/2.jpg" alt="Photo 3">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/3.jpg" alt="Photo 4">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/4.jpg" alt="Photo 5">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/5.jpg" alt="Photo 6">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/6.jpg" alt="Photo 7">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/7.jpg" alt="Photo 8">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/8.jpg" alt="Photo 9">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/9.jpg" alt="Photo 10">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/10.jpg" alt="Photo 11">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/11.jpg" alt="Photo 12">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/12.jpg" alt="Photo 13">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/13.jpg" alt="Photo 14">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/14.jpg" alt="Photo 15">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/15.jpg" alt="Photo 16">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/16.jpg" alt="Photo 17">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/17.jpg" alt="Photo 18">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/18.jpg" alt="Photo 19">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/19.jpg" alt="Photo 20">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/20.jpg" alt="Photo 21">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/21.jpg" alt="Photo 22">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/22.jpg" alt="Photo 23">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/23.jpg" alt="Photo 24">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/24.jpg" alt="Photo 25">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/25.jpg" alt="Photo 26">
-                    <img src="images/Portfolio/BIANCA & CRIS (PRENUP)/26.jpg" alt="Photo 27">
+                    <img src="BIANCA & CRIS (PRENUP)/0.jpg" alt="Photo 1">
+                    <img src="BIANCA & CRIS (PRENUP)/1.jpg" alt="Photo 2">
+                    <img src="BIANCA & CRIS (PRENUP)/2.jpg" alt="Photo 3">
+                    <img src="BIANCA & CRIS (PRENUP)/3.jpg" alt="Photo 4">
+                    <img src="BIANCA & CRIS (PRENUP)/4.jpg" alt="Photo 5">
+                    <img src="BIANCA & CRIS (PRENUP)/5.jpg" alt="Photo 6">
+                    <img src="BIANCA & CRIS (PRENUP)/6.jpg" alt="Photo 7">
+                    <img src="BIANCA & CRIS (PRENUP)/7.jpg" alt="Photo 8">
+                    <img src="BIANCA & CRIS (PRENUP)/8.jpg" alt="Photo 9">
+                    <img src="BIANCA & CRIS (PRENUP)/9.jpg" alt="Photo 10">
+                    <img src="BIANCA & CRIS (PRENUP)/10.jpg" alt="Photo 11">
+                    <img src="BIANCA & CRIS (PRENUP)/11.jpg" alt="Photo 12">
+                    <img src="BIANCA & CRIS (PRENUP)/12.jpg" alt="Photo 13">
+                    <img src="BIANCA & CRIS (PRENUP)/13.jpg" alt="Photo 14">
+                    <img src="BIANCA & CRIS (PRENUP)/14.jpg" alt="Photo 15">
+                    <img src="BIANCA & CRIS (PRENUP)/15.jpg" alt="Photo 16">
+                    <img src="BIANCA & CRIS (PRENUP)/16.jpg" alt="Photo 17">
+                    <img src="BIANCA & CRIS (PRENUP)/17.jpg" alt="Photo 18">
+                    <img src="BIANCA & CRIS (PRENUP)/18.jpg" alt="Photo 19">
+                    <img src="BIANCA & CRIS (PRENUP)/19.jpg" alt="Photo 20">
+                    <img src="BIANCA & CRIS (PRENUP)/20.jpg" alt="Photo 21">
+                    <img src="BIANCA & CRIS (PRENUP)/21.jpg" alt="Photo 22">
+                    <img src="BIANCA & CRIS (PRENUP)/22.jpg" alt="Photo 23">
+                    <img src="BIANCA & CRIS (PRENUP)/23.jpg" alt="Photo 24">
+                    <img src="BIANCA & CRIS (PRENUP)/24.jpg" alt="Photo 25">
+                    <img src="BIANCA & CRIS (PRENUP)/25.jpg" alt="Photo 26">
+                    <img src="BIANCA & CRIS (PRENUP)/26.jpg" alt="Photo 27">
 
                 </div>
             </div>
@@ -442,32 +442,32 @@
             <div class="gallery-content">
                 <span class="close-button">&times;</span>
                 <div class="gallery-column">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/1.jpg" alt="Photo 1">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/2.jpg" alt="Photo 2">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/3.jpg" alt="Photo 3">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/4.jpg" alt="Photo 4">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/5.jpg" alt="Photo 5">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/6.jpg" alt="Photo 6">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/7.jpg" alt="Photo 7">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/8.jpg" alt="Photo 8">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/9.jpg" alt="Photo 9">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/10.jpg" alt="Photo 10">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/11.jpg" alt="Photo 11">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/12.jpg" alt="Photo 12">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/13.jpg" alt="Photo 13">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/14.jpg" alt="Photo 14">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/15.jpg" alt="Photo 15">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/16.jpg" alt="Photo 16">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/17.jpg" alt="Photo 17">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/18.jpg" alt="Photo 18">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/19.jpg" alt="Photo 19">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/20.jpg" alt="Photo 20">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/21.jpg" alt="Photo 21">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/22.jpg" alt="Photo 22">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/23.jpg" alt="Photo 23">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/24.jpg" alt="Photo 24">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/25.jpg" alt="Photo 25">
-                    <img src="images/Portfolio/MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/26.jpg" alt="Photo 26">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/1.jpg" alt="Photo 1">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/2.jpg" alt="Photo 2">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/3.jpg" alt="Photo 3">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/4.jpg" alt="Photo 4">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/5.jpg" alt="Photo 5">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/6.jpg" alt="Photo 6">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/7.jpg" alt="Photo 7">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/8.jpg" alt="Photo 8">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/9.jpg" alt="Photo 9">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/10.jpg" alt="Photo 10">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/11.jpg" alt="Photo 11">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/12.jpg" alt="Photo 12">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/13.jpg" alt="Photo 13">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/14.jpg" alt="Photo 14">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/15.jpg" alt="Photo 15">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/16.jpg" alt="Photo 16">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/17.jpg" alt="Photo 17">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/18.jpg" alt="Photo 18">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/19.jpg" alt="Photo 19">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/20.jpg" alt="Photo 20">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/21.jpg" alt="Photo 21">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/22.jpg" alt="Photo 22">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/23.jpg" alt="Photo 23">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/24.jpg" alt="Photo 24">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/25.jpg" alt="Photo 25">
+                    <img src="MADEL & RAMZEN AND MAAN & PAUL (TWIN WEDDING)/26.jpg" alt="Photo 26">
                 </div>
             </div>
         </div>
@@ -486,7 +486,7 @@
 
         <div class="signature">Agnes & Raymond</div>
       </div>
-      <div class="testimonial-photo" style="background-image: url('images/Feedbacks/1.jpg');"></div>
+      <div class="testimonial-photo" style="background-image: url('Feedbacks/1.jpg');"></div>
     </div>
 
     <div class="testimonial-wrapper">
@@ -500,7 +500,7 @@
 
         <div class="signature">Bea</div>
       </div>
-      <div class="testimonial-photo" style="background-image: url('images/Feedbacks/2.jpg');"></div>
+      <div class="testimonial-photo" style="background-image: url('Feedbacks/2.jpg');"></div>
     </div>
 
     <div class="testimonial-wrapper">
@@ -514,7 +514,7 @@
 
         <div class="signature">Bryan & Lawrence</div>
       </div>
-      <div class="testimonial-photo" style="background-image: url('images/Feedbacks/3.jpg');"></div>
+      <div class="testimonial-photo" style="background-image: url('Feedbacks/3.jpg');"></div>
     </div>
 
     <div class="testimonial-wrapper">
@@ -526,7 +526,7 @@
 
         <div class="signature">Christine & Janno</div>
       </div>
-      <div class="testimonial-photo" style="background-image: url('images/Feedbacks/4.jpg');"></div>
+      <div class="testimonial-photo" style="background-image: url('Feedbacks/4.jpg');"></div>
     </div>
 
     <div class="testimonial-wrapper">
@@ -538,7 +538,7 @@
 
         <div class="signature">Lyca</div>
       </div>
-      <div class="testimonial-photo" style="background-image: url('images/Feedbacks/5.jpg');"></div>
+      <div class="testimonial-photo" style="background-image: url('Feedbacks/5.jpg');"></div>
     </div>
   </div>
 
@@ -702,4 +702,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="JS/photoGalleryJava.js"></script>
 </body>
+
 </html>
