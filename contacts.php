@@ -21,7 +21,7 @@
         </div>
         <nav class="nav-bar-casing">
             <ul class="nav-bar">
-                <li><a href="home.php">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li class="separator"></li>
                 <li><a href="about.php">About</a></li>
                 <li class="separator"></li>
@@ -399,4 +399,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="JS/contactJava.js"></script> 
 </body>
+
 </html>
