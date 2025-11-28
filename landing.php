@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shuttered-Dreams-Project</title>
-  <link rel="stylesheet" href="homeStyle.css"/>
+  <link rel="stylesheet" href="landing.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@600&family=Sacramento&display=swap" rel="stylesheet">
   <link rel="preload" href="images/slideshow1.jpg" as="image">
@@ -163,3 +163,4 @@
   <script src="JS/landing.js"></script>
 </body>
 </html>
+
