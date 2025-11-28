@@ -21,7 +21,7 @@
         </div>
         <nav class="nav-bar-casing">
           <ul class="nav-bar">
-              <li><a href="home.php">Home</a></li>
+              <li><a href="home.html">Home</a></li>
               <li class="separator"></li>
               <li><a href="about.php">About</a></li>
               <li class="separator"></li>
@@ -105,3 +105,4 @@
 <script src="JS/faqsJava.js"></script>
 
 </html>
+
