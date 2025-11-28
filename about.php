@@ -61,11 +61,11 @@
                 </p>
             </div>
             <div class="features-logos">
-                <img src="images/features_Logo/bride_And_Breakfast.jpeg" alt="Logo 1">
-                <img src="images/features_Logo/bridalPod.jpg" alt="Logo 2">
-                <img src="images/features_Logo/brideBook.png" alt="Logo 3">
-                <img src="images/features_Logo/merry_To_Marry.png" alt="Logo 4">
-                <img src="images/features_Logo/brideWorthy.jpg" alt="Logo 5">
+                <img src="features_Logo/bride_And_Breakfast.jpeg" alt="Logo 1">
+                <img src="features_Logo/bridalPod.jpg" alt="Logo 2">
+                <img src="features_Logo/brideBook.png" alt="Logo 3">
+                <img src="features_Logo/merry_To_Marry.png" alt="Logo 4">
+                <img src="features_Logo/brideWorthy.jpg" alt="Logo 5">
             </div>
         </div>
 
@@ -73,10 +73,10 @@
 
 <div class="rctmcontainer">
     <div class="rctmleft">
-        <img src="images/aboutfeatures2.jpg" class="rctmphoto-vertical">
+        <img src="aboutfeatures2.jpg" class="rctmphoto-vertical">
     </div>
     <div class="rctmright">
-        <img src="images/aboutfeatures1.jpg" class="rctmphoto-horizontal">
+        <img src="aboutfeatures1.jpg" class="rctmphoto-horizontal">
     </div>
 </div>
 
@@ -240,4 +240,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="JS/aboutJava.js"></script>
 </body>
+
 </html>
