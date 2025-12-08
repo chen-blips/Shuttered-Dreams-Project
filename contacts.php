@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHUTTERED DREAMS</title>
+    <link rel="stylesheet" href="contactsStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header-centered">
+        <div class="logo-casing">
+            <div class="logo-container">
+                <div class="logo-centered">
+                    <img src="images/SDP_Logo0.1_White.png" alt="Shuttered Dreams Project Logo">
+                </div>
+                <span class="logo-separator"></span>
+                <span class="logo-text">SHUTTERED DREAMS PROJECT</span>
+            </div>
+        </div>
+        <nav class="nav-bar-casing">
+            <ul class="nav-bar">
+                <li><a href="home.html">Home</a></li>
+                <li class="separator"></li>
+                <li><a href="about.html">About</a></li>
+                <li class="separator"></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="separator"></li>
+                <li><a href="photoGallery.html">Photo Gallery</a></li>
+                <li class="separator"></li>
+                <li><a href="contacts.php">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content-area">
+        <div class="form-container-transparent form-card-layout">
+            <div class="form-section-flex">
+                <h2 class="inquiry-section-title">Enquire About Your Special Day</h2>
+            
+                <form class="form-spacing" action="https://getform.io/f/awnwwvnb" method="POST">
+                <form class="form-spacing"
+                    action="https://getform.io/f/YOUR_UNIQUE_HASH"
+                    method="POST"
+                    data-redirect="thankYou.php"  data-error="error.php">  
+                    
+                <div>
+                        <label for="brideName" class="form-label">Bride's Full Name:</label>
+                        <input type="text" id="brideName" name="brideName" placeholder="Bride's Full Name"
+                                class="form-input form-input-shorter" required
+                                pattern="^[A-Za-z\s.'-]+$"
+                                title="Only letters, spaces, hyphens, apostrophes, and periods are allowed.">
+                    </div>
+
+                    <div>
+                        <label for="groomName" class="form-label">Groom's Full Name:</label>
+                        <input type="text" id="groomName" name="groomName" placeholder="Groom's Full Name"
+                                class="form-input form-input-shorter"
+                                pattern="^[A-Za-z\s.'-]+$"
+                                title="Only letters, spaces, hyphens, apostrophes, and periods are allowed.">
+                    </div>
+
+                    <div>
+                        <label for="preferredNames" class="form-label">Preferred Names:</label>
+                        <input type="text" id="preferredNames" name="preferredNames" placeholder="How should we address you?"
+                                class="form-input"
+                                pattern="^[A-Za-z\s.'-]+$"
+                                title="Only letters, spaces, hyphens, apostrophes, and periods are allowed.">
+                    </div>
+
+                    <div>
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email"
+                                class="form-input" required>
+                    </div>
+
+                    <div>
+                        <label for="phone" class="form-label">Phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number"
+                                class="form-input"
+                                pattern="^[0-9+\-()\s]*$"
+                                title="Only numbers, +, -, (, ), and spaces are allowed.">
+                    </div>
+
+                    <div>
+                        <label for="location" class="form-label">Event Location:</label>
+                        <input type="text" id="location" name="location" placeholder="Wedding Venue or Event Location"
+                                class="form-input" required>
+                    </div>
+
+                    <div>
+                        <label for="weddingDate" class="form-label">Wedding Date:</label>
+                        <input type="date" id="weddingDate" name="weddingDate"
+                                class="form-input" required>
+                    </div>
+
+                    <div>
+                        <label for="time" class="form-label">Ideal Time for Photography (e.g., Ceremony Start):</label>
+                        <input type="time" id="time" name="time"
+                                class="form-input">
+                    </div>
+
+                    <div>
+                        <label for="package" class="form-label">Preferred Package:</label>
+                        <select id="package" name="package" class="form-input" required>
+                            <option value="">Select a package</option>
+                            <option value="woodster">Woodster</option>
+                            <option value="forester">Forester</option>
+                            <option value="wayfarer">Wayfarer</option>
+                            <option value="minimalist">Minimalist</option>
+                            <option value="other_package">Other</option> </select>
+                        <div id="otherPackageInput" class="hidden-input-container">
+                            <label for="otherPackageName" class="form-label">Please specify package:</label>
+                            <input type="text" id="otherPackageName" name="otherPackageName" class="form-input" placeholder="e.g., Custom Wedding Package">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="form-label addon-label-margin">Enhance Your Experience with Add-ons:</label>
+                        <div class="addons-grid">
+                            <label class="addon-checkbox-label">
+                                <input type="checkbox" name="addons" value="additionalPhotographer" class="addon-checkbox">
+                                <span class="addon-text">Additional Photographer</span>
+                            </label>
+                            <label class="addon-checkbox-label">
+                                <input type="checkbox" name="addons" value="birthToEngagement" class="addon-checkbox">
+                                <span class="addon-text">Pre-Wedding Photo Montage</span>
+                            </label>
+                            <label class="addon-checkbox-label">
+                                <input type="checkbox" name="addons" value="onSiteSlideshow" class="addon-checkbox">
+                                <span class="addon-text">Same-Day Edit Slideshow</span>
+                            </label>
+                            <label class="addon-checkbox-label">
+                                <input type="checkbox" name="addons" value="blowUpPhoto" class="addon-checkbox">
+                                <span class="addon-text">Signature Framed Print (16"x20")</span>
+                            </label>
+                            <label class="addon-checkbox-label">
+                                <input type="checkbox" name="addons" value="aerialPhotos" class="addon-checkbox">
+                                <span class="addon-text">Drone Photography</span>
+                            </label>
+                            <label class="addon-checkbox-label">
+                                <input type="checkbox" name="addons" value="memoryBox" class="addon-checkbox">
+                                <span class="addon-text">Curated Memory Box with 50 Prints</span>
+                            </label>
+                            <label class="addon-checkbox-label">
+                                <input type="checkbox" name="addons" value="fineArtAlbum10x10" class="addon-checkbox">
+                                <span class="addon-text">Luxury Fine Art Album (10"x10")</span>
+                            </label>
+                            <label class="addon-checkbox-label">
+                                <input type="checkbox" name="addons" value="fineArtAlbum8x8" class="addon-checkbox">
+                                <span class="addon-text">Keepsake Fine Art Album (8"x8")</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="howFindUs" class="form-label">How did you hear about us?</label>
+                        <select id="howFindUs" name="howFindUs" class="form-input">
+                            <option value="">Select an option</option>
+                            <option value="socialMedia">Social Media</option>
+                            <option value="wordOfMouth">Referral / Word of Mouth</option>
+                            <option value="weddingFair">Wedding Expo / Fair</option>
+                            <option value="onlineSearch">Online Search</option>
+                            <option value="other_source">Other</option> </select>
+                        <div id="otherSourceInput" class="hidden-input-container">
+                            <label for="otherSourceName" class="form-label">Please specify how you heard about us:</label>
+                            <input type="text" id="otherSourceName" name="otherSourceName" class="form-input" placeholder="e.g., Friend's recommendation, blog post">
+                        </div>
+                    </div>
+
+                    <div class="button-container">
+                        <button type="submit" class="submit-inquiry-button">
+                            Submit Inquiry
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact-info-section">
+                <h2 class="inquiry-section-title">Our Contact Details</h2>
+                <div class="contact-details">
+                    <p class="contact-detail-item"><i class="fas fa-phone-alt contact-icon"></i> <strong class="contact-details-strong">Call Us:</strong> +63 927 815 5107</p>
+                    <p class="contact-detail-item"><i class="fas fa-envelope contact-icon"></i> <strong class="contact-details-strong">Email Us:</strong> shuttereddreamsproject@gmail.com</p>
+                    <p class="contact-detail-item"><i class="fas fa-map-marker-alt contact-icon"></i> <strong class="contact-details-strong">Studio Location:</strong> Marikina City, Metro Manila, Philippines</p>
+                </div>
+
+                <div class="section-margin-top">
+                    <h3 class="social-connect-title">Connect with Us on Social Media:</h3>
+                    <div class="social-links-icons">
+                        <a href="https://www.facebook.com/shuttereddreamsproject" target="_blank" aria-label="Facebook" rel="noopener noreferrer" class="social-icon-link">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/shuttereddreams.project/" target="_blank" aria-label="Instagram" rel="noopener noreferrer" class="social-icon-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="section-margin-top">
+                    <div class="faq-button-container">
+                        <a href="javascript:void(0);" id="openFaqButton" class="terms-faq-button"> FAQs </a> </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<footer>
+    <div class="footer-content">
+        <div class="social-links">
+            <a href="https://www.facebook.com/shuttereddreamsproject" target="_blank" aria-label="Facebook" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
+            <span class="social-separator"></span>
+            <a href="https://www.instagram.com/shuttereddreams.project/" target="_blank" aria-label="Instagram" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            </div>
+        <p class="copyright">&copy; 2025 Shuttered Dreams Project. All rights reserved.
+            <span class="copyright-separator"></span> <a href="javascript:void(0);" id="openPrivacyPolicyButtonFooter" class="privacy-policy-footer-link">Privacy Policy</a>
+        </p>
+    </div>
+</footer>
+
+    <div id="faqModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeFaqButton">&times;</span>
+            <h2 class="modal-title">FAQs</h2> <p class="intro-text">Here are some frequently asked questions to help you learn more about our services and process:</p> <hr class="modal-separator">
+
+            <div class="faq-item">
+                <h3 class="faq-question">What is your photography style?</h3>
+                <p class="faq-answer">
+                    Our style is primarily **candid and storytelling**, aiming to capture genuine emotions and unscripted moments throughout your special day. We blend artistic compositions with a natural approach to create timeless and authentic images.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Do you offer engagement sessions?</h3>
+                <p class="faq-answer">
+                    Yes, we highly recommend **engagement sessions**! They're a fantastic way for us to get to know each other, for you to get comfortable in front of the camera, and for you to receive a beautiful set of photos showcasing your love story before the wedding day. Many of our packages include this option.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">How many photographers will be present on our wedding day?</h3>
+                <p class="faq-answer">
+                    Most of our wedding packages include **two main photographers** to ensure comprehensive coverage from multiple perspectives. For larger events or specific needs, an additional photographer can be added as an add-on.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">When can we expect to receive our photos?</h3>
+                <p class="faq-answer">
+                    You'll typically receive a **sneak peek** of your wedding photos within **3-5 days** after your event. The complete gallery, meticulously edited and delivered in high resolution, is usually available within **6-8 weeks**.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">How do we receive our final images?</h3>
+                <p class="faq-answer">
+                    Your beautifully curated images will be delivered via a **private online gallery**, where you can view, download, and share them with friends and family. Physical products like albums or prints will be hand-delivered or shipped securely.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">What is your payment schedule?</h3>
+                <p class="faq-answer">
+                    A **reservation fee** is required to secure your date. The remaining balance is typically split into installments, with the final payment due prior to your wedding day. Specific payment terms will be outlined in your personalized contract.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">What if we need to reschedule or cancel our wedding?</h3>
+                <p class="faq-answer">
+                    We understand that plans can change. **Rescheduling** is allowed once, subject to our availability. In case of **cancellation**, the reservation fee is non-refundable. We encourage you to discuss any concerns as early as possible.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Do you travel for weddings?</h3>
+                <p class="faq-answer">
+                    Absolutely! We love capturing love stories in new destinations. **Travel fees** may apply for locations outside of Metro Manila. Please provide your event location in the inquiry form so we can provide an accurate quote.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Can we create a custom package?</h3>
+                <p class="faq-answer">
+                    Yes, we're happy to discuss your specific needs! While we offer carefully designed packages, we can also **customize a collection** to perfectly fit your vision and budget. Feel free to detail your requirements in the inquiry form.
+                </p>
+            </div>
+
+            <hr class="modal-separator">
+            <p class="outro-text">Still have questions? Don't hesitate to reach out to us directly through the contact form!</p>
+        </div>
+    </div>
+
+    <div id="privacyPolicyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closePrivacyPolicyButton">&times;</span>
+            <h2 class="modal-title">Privacy Policy</h2>
+
+            <p class="intro-text">
+                This Privacy Policy describes how Shuttered Dreams Project ("we," "us," or "our") collects, uses, and discloses your personal information when you visit and interact with our website, including the booking form.
+            </p>
+
+            <hr class="modal-separator">
+
+            <div class="faq-item">
+                <h3 class="faq-question">1. Information We Collect</h3>
+                <p class="faq-answer">
+                    We collect personal information that you voluntarily provide to us when you express an interest in obtaining information about us or our services, when you participate in activities on the website (such as filling out an inquiry or booking form), or otherwise when you contact us.<br><br>
+                    The personal information we collect depends on the context of your interactions with us and the website, the choices you make, and the products and features you use. The personal information we may collect includes the following:<br><br>
+                    <ul>
+                        <li>**Personal Identifiers:** Names (Bride's Full Name, Groom's Full Name), Preferred Names, Email Addresses, Phone Numbers.</li>
+                        <li>**Event Details:** Wedding Venue/Event Location, Wedding Date, Ideal Photography Time, Package selection, Add-ons.</li>
+                        <li>**Discovery Information:** Information about how you discovered our services (e.g., Referral / Word of Mouth, Wedding Expo / Fair).</li>
+                        <li>**Usage Data:** We may also automatically collect certain information when you visit, use, or navigate the website. This information may include your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our website, and other technical information. This information is primarily needed to maintain the security and operation of our website, and for our internal analytics and reporting purposes.</li>
+                        <li>**Cookies:** Like many businesses, we also collect information through cookies and similar technologies.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">2. How We Use Your Information</h3>
+                <p class="faq-answer">
+                    We use personal information collected via our website for a variety of business purposes described below. We process your personal information for these purposes in reliance on our legitimate business interests, in order to enter into or perform a contract with you, with your consent, and/or for compliance with our legal obligations.<br><br>
+                    We use the information we collect or receive:
+                    <ul>
+                        <li>**To facilitate account creation and logon process.**</li>
+                        <li>**To send you marketing and promotional communications.** We may use the personal information you send to us for our marketing purposes, if this is in accordance with your marketing preferences. You can opt-out of our marketing emails at any time.</li>
+                        <li>**To send administrative information to you.** We may use your personal information to send you product, service and new feature information and/or information about changes to our terms, conditions, and policies.</li>
+                        <li>**Fulfill and manage your bookings.** We may use your information to fulfill and manage your orders, payments, returns, and exchanges made through the website.</li>
+                        <li>**Post testimonials.** We post testimonials on our website that may contain personal information. Prior to posting a testimonial, we will obtain your consent to use your name and the content of the testimonial. If you wish to update or delete your testimonial, please contact us.</li>
+                        <li>**Deliver targeted advertising to you.** We may use your information to develop and display content and advertising (and work with third parties who do so) tailored to your interests and/or location and to measure its effectiveness.</li>
+                        <li>**Request Feedback.** We may use your information to request feedback and to contact you about your use of our website.</li>
+                        <li>**To protect our Services.** We may use your information as part of our efforts to keep our website safe and secure (e.g., for fraud monitoring and prevention).</li>
+                        <li>**To enforce our terms, conditions and policies** for business purposes, to comply with legal and regulatory requirements or in connection with our contract.</li>
+                        <li>**To respond to legal requests and prevent harm.** If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.</li>
+                        <li>**To protect our Services.** We may use your information as part of our efforts to keep our website safe and secure (e.g., for fraud monitoring and prevention).</li>
+                        <li>**For other Business Purposes.** We may use your information for other Business Purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our website, products, marketing and your experience.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">3. Will Your Information Be Shared With Anyone?</h3>
+                <p class="faq-answer">
+                    We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations.
+                    <br><br>
+                    We may process or share data based on the following legal basis:
+                    <ul>
+                        <li>**Consent:** We may process your data if you have given us specific consent to use your personal information for a specific purpose.</li>
+                        <li>**Legitimate Interests:** We may process your data when it is reasonably necessary to achieve our legitimate business interests.</li>
+                        <li>**Performance of a Contract:** Where we have entered into a contract with you, we may process your personal information to fulfill the terms of our contract.</li>
+                        <li>**Legal Obligations:** We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process, such as in response to a court order or a subpoena (including in response to public authorities to meet national security or law enforcement requirements).</li>
+                        <li>**Vital Interests:** We may disclose your information where we believe it is necessary to investigate, prevent, or take action regarding potential violations of our policies, suspected fraud, situations involving potential threats to the safety of any person and illegal activities, or as evidence in litigation in which we are involved.</li>
+                    </ul>
+                    More specifically, we may need to process your data or share your personal information in the following situations:
+                    <ul>
+                        <li>**Vendors, Consultants and Other Third-Party Service Providers:** We may share your data with third-party vendors, service providers, contractors or agents who perform services for us or on our behalf and require access to such information to do that work. Examples include: payment processing, data analysis, email delivery, hosting services, customer service and marketing efforts. We may allow selected third parties to use tracking technology on the website, which will enable them to collect data about how you interact with the website over time. This information may be used to, among other things, analyze and track data, determine the popularity of certain content, pages or features, and better understand online activity. Unless described in this Policy, we do not share, sell, rent or trade any of your information with third parties for their promotional purposes.</li>
+                        <li>**Business Transfers:** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">4. Do We Use Cookies and Other Tracking Technologies?</h3>
+                <p class="faq-answer">
+                    We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Policy (if separate, link it here, otherwise include details).
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">5. What Are Your Privacy Rights?</h3>
+                <p class="faq-answer">
+                    In some regions, such as the European Economic Area (EEA) and the Philippines, you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; and (iv) if applicable, to data portability. In certain circumstances, you may also have the right to object to the processing of your personal information. To make such a request, please use the contact details provided below.<br><br>
+                    We will consider and act upon any request in accordance with applicable data protection laws.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">6. Do We Make Updates to This Policy?</h3>
+                <p class="faq-answer">
+                    We may update this privacy policy from time to time. The updated version will be indicated by an updated "Revised" date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy policy, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy policy frequently to be informed of how we are protecting your information.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">7. How Can You Contact Us About This Policy?</h3>
+                <p class="faq-answer">
+                    If you have questions or comments about this policy, you may email us at shuttereddreamsproject@gmail.com or by post to:<br><br>
+                    Shuttered Dreams Project<br>
+                    Marikina City, Metro Manila, Philippines
+                </p>
+            </div>
+
+            <hr class="modal-separator">
+            <p class="outro-text">This policy was last updated: <span id="policyLastUpdated"></span></p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="JS/contactJava.js"></script> 
+</body>
+</html>

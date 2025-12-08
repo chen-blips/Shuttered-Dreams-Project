@@ -1,0 +1,483 @@
+/* --- Global Variables and Base Styles --- */
+:root {
+    --primary-color: #A0522D; /* Sienna (Wedding/Earthy Tone) */
+    --secondary-color: #F5F5DC; /* Beige/Cream (Table Header Background) */
+    --text-color: #333;
+    --bg-color: #f4f7f6;
+    --sidebar-bg: #3c3c3c; /* Dark Grey background */
+    --border-light: #eee;
+    
+    /* Status Colors */
+    --status-confirmed: #155724;
+    --status-confirmed-bg: #d4edda;
+    --status-pending: #856404;
+    --status-pending-bg: #fff3cd;
+    --status-new: #004085;
+    --status-new-bg: #cce5ff;
+    --status-rejected: #721c24;
+    --status-rejected-bg: #f8d7da;
+    --status-delivered: #495057;
+    --status-delivered-bg: #e2e3e5;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* --- Sidebar Styling --- */
+.sidebar {
+    width: 250px;
+    background-color: var(--sidebar-bg); 
+    color: white;
+    padding: 0; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevents sidebar from shrinking */
+}
+
+/* --- Logo Styling --- */
+.logo-casing {
+    padding: 15px 10px; 
+    margin-bottom: 10px; 
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-centered img.sidebar-logo {
+    height: 42px; 
+    width: auto;
+    display: block;
+    margin-right: 5px;
+}
+
+.logo-separator {
+    border-left: 1.5px solid #ffffff;
+    height: 1.5em;
+    opacity: 0.7;
+    margin-right: 5px;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-family: 'Playfair Display', serif; 
+    font-size: 0.8em; 
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+/* --- Navigation Styling --- */
+.sidebar nav {
+    padding-top: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav li a {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #ccc;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar nav li a:hover,
+.sidebar nav li.active a {
+    background-color: #555;
+    color: white;
+}
+
+.sidebar nav i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+/* --- Main Content & Header --- */
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.user-profile i {
+    margin-left: 10px;
+    font-size: 1.5em;
+    color: var(--primary-color);
+}
+
+/* --- KPI Cards --- */
+.kpi-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .icon {
+    font-size: 2.5em;
+    margin-right: 15px;
+}
+
+.card-blue .icon { color: #2196F3; }
+.card-green .icon { color: #4CAF50; }
+.card-red .icon { color: #F44336; }
+.card-yellow .icon { color: #FFC107; }
+
+.card .label {
+    margin: 0 0 5px 0;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.card .value {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card .trend {
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+.trend.up { color: green; }
+.trend.down { color: red; }
+.trend.neutral { color: gray; }
+
+/* --- Data Sections (Tables/Lists) --- */
+.data-section {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.panel {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    flex: 1;
+}
+
+.panel h2 {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+/* Table Styling (General) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 12px 0;
+    text-align: left;
+    border-bottom: 1px solid var(--border-light);
+}
+th {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-weight: 600;
+}
+tbody tr:hover {
+    background-color: #fcfcfc;
+}
+
+
+/* Inquiry List */
+.recent-inquiries ul {
+    list-style: none;
+    padding: 0;
+}
+.recent-inquiries li {
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--border-light);
+    font-size: 0.95em;
+}
+
+/* --- Status Tags (Unified System) --- */
+.tag, .status-tag {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-left: 10px;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+/* Dashboard Notification Tags */
+.tag-high { background-color: #F44336; color: white; }
+.tag-low { background-color: #2196F3; color: white; }
+.tag-finance { background-color: #FFC107; color: white; }
+
+/* Booking/Inquiry/Gallery Status Tags */
+.status-tag.confirmed, .tag.tag-confirmed, .status-tag.accepted, .status-tag.ready {
+    background-color: var(--status-confirmed-bg);
+    color: var(--status-confirmed);
+}
+.status-tag.pending, .tag.tag-pending, .status-tag.processing {
+    background-color: var(--status-pending-bg);
+    color: var(--status-pending);
+}
+.status-tag.new, .tag.tag-new, .status-tag.reviewed, .tag.tag-low {
+    background-color: var(--status-new-bg);
+    color: var(--status-new);
+}
+.status-tag.rejected, .tag.tag-rejected, .tag.tag-high {
+    background-color: var(--status-rejected-bg);
+    color: var(--status-rejected);
+}
+.status-tag.delivered {
+    background-color: var(--status-delivered-bg);
+    color: var(--status-delivered);
+}
+
+
+/* --- Action Buttons --- */
+.view-all-btn {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    margin-top: 15px;
+    padding: 5px 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+.view-all-btn:hover {
+    opacity: 0.7;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #8B4513; 
+}
+
+/* Secondary Action Button (Used for Export, View Files, etc.) */
+.action-btn {
+    background: none;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.action-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Specific Inquiry Acceptance Buttons */
+.accept-btn {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+.accept-btn:hover {
+    background-color: #388e3c;
+}
+
+.reject-btn {
+    background-color: #F44336; 
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+.reject-btn:hover {
+    background-color: #d32f2f;
+}
+.action-column {
+    text-align: center;
+    width: 200px;
+}
+
+
+/* --- Gallery Section Specific Styles --- */
+.photo-upload-status {
+    width: calc(50% - 15px); 
+}
+
+.progress-bar-container {
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 10px 0 20px 0;
+    height: 25px;
+    overflow: hidden; /* Ensure bar stays within container */
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+    transition: width 0.5s;
+    white-space: nowrap;
+}
+
+/* Gallery Grid Layout */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.gallery-item {
+    /* Inherits .card styles */
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid var(--border-light);
+    margin-bottom: 0; 
+}
+
+.album-stats {
+    font-size: 0.85em;
+    color: #999;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.album-actions {
+    margin-top: auto; 
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.album-actions .action-btn {
+    flex-grow: 1;
+}
+
+.upload-controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.upload-controls .gallery-search,
+.upload-controls .gallery-filter {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    flex-grow: 1;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+    .sidebar nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sidebar nav li {
+        flex-basis: 30%; 
+    }
+    .data-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .photo-upload-status {
+        width: 100%;
+    }
+    .upload-controls {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-content {
+        padding: 15px;
+    }
+    .kpi-cards {
+        grid-template-columns: 1fr;
+    }
+    .sidebar nav li {
+        flex-basis: 45%;
+    }
+    .upload-controls button,
+    .upload-controls input,
+    .upload-controls select {
+        width: 100%;
+        flex-grow: 0;
+    }
+    .action-column {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

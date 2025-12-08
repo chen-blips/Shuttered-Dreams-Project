@@ -1,0 +1,192 @@
+/* --- Global & Layout Styles (Copied from previous response for context) --- */
+:root {
+    --sidebar-bg: #32353A;
+    --sidebar-text: #E0E0E0;
+    --active-item-bg: #495057;
+    --main-bg: #f4f7f9;
+    --card-bg: #ffffff;
+    --primary-color: #A0644D; 
+    --top-bar-border: #E0E0E0;
+    --border-light: #eee;
+    --text-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg);
+    color: var(--text-color);
+}
+
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styling (Unchanged) */
+.sidebar {
+    width: 220px;
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    padding-top: 20px;
+    flex-shrink: 0;
+}
+.logo-area { text-align: center; padding: 10px 0 30px 0; font-weight: bold; font-size: 1.1em; }
+.project-name { font-size: 0.7em; opacity: 0.7; margin-top: 5px; }
+.nav-menu .nav-item { display: block; padding: 12px 20px; text-decoration: none; color: var(--sidebar-text); border-left: 3px solid transparent; transition: background-color 0.2s; }
+.nav-menu .nav-item:hover { background-color: #494949; }
+.nav-menu .nav-item.active { background-color: var(--active-item-bg); border-left-color: var(--primary-color); }
+
+/* Main Content Area (Unchanged) */
+.main-content {
+    flex-grow: 1;
+    padding: 0 30px 30px 30px;
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--top-bar-border);
+    margin-bottom: 25px;
+}
+.top-bar h2 { margin: 0; font-size: 1.8em; color: var(--text-color); }
+.admin-user { color: #555; }
+
+/* --- Card and Table Specific Styles --- */
+.card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.bookings-list-card h3 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+/* Table Styling */
+.bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.95em;
+}
+
+.bookings-table th, 
+.bookings-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.bookings-table th {
+    background-color: #f8f8f8;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 2px solid var(--border-light);
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+
+.bookings-table tr:not(:last-child) td {
+    border-bottom: 1px solid var(--border-light);
+}
+
+.bookings-table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Status Tags (Matching the look of priority tags in your dashboard image) */
+.status-tag {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-tag.confirmed {
+    background-color: #d4edda;
+    color: #155724;
+}
+.status-tag.pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+.status-tag.quote {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+.status-tag.paid {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+/* Actions Links */
+.action-link {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.2s;
+}
+
+.action-link:hover {
+    color: #0056b3;
+}
+
+/* Footer Link */
+.table-footer {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.view-all-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: opacity 0.2s;
+}
+
+.view-all-link:hover {
+    opacity: 0.8;
+}
+
+/* Table Actions (Buttons above the table) */
+.table-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.action-btn {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s;
+}
+
+.action-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.add-new-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.add-new-btn:hover {
+    background-color: #8a5843;
+}

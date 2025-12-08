@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleries & Albums - Shuttered Dreams</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="logo-casing">
+                <div class="logo-container">
+                <div class="logo-centered">
+                <img src="images/SDP_Logo0.1_White.png" alt="Shuttered Dreams Logo" class="sidebar-logo">
+            </div>
+                <span class="logo-separator"></span>
+                <span class="logo-text">SHUTTERED DREAMS<br></br> PROJECT</span>
+            </div>
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.php"><i class="fas fa-home"></i>Dashboard</a></li>
+                    <li><a href="bookings.php"><i class="fas fa-calendar-alt"></i>Bookings</a></li>
+                    <li><a href="inquiries.php"><i class="fas fa-bullhorn"></i>Leads Inquiries</a></li>
+                    <li class="active"><a href="galleries.html"><i class="fas fa-images"></i>Galleries & Albums</a></li>
+                    <li><a href="clients.php"><i class="fas fa-users"></i>Clients</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h1>Galleries & Album Management</h1>
+                <div class="user-profile">
+                    Admin User <i class="fas fa-user-circle"></i>
+                </div>
+            </header>
+
+            <div class="panel gallery-actions-panel">
+                <h2>☁️ Create & Upload</h2>
+                <div class="upload-controls">
+                    <button class="btn-primary upload-new-btn">⬆️ Upload New Gallery</button>
+                    <input type="text" placeholder="Search by Client or Album Name..." class="gallery-search">
+                    <select class="gallery-filter">
+                        <option value="all">All Statuses</option>
+                        <option value="processing">Processing</option>
+                        <option value="ready">Ready to Share</option>
+                        <option value="archived">Archived</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="gallery-grid">
+                
+                <div class="card gallery-item">
+                    <div class="album-details">
+                        <h4>Alex & Sarah M. - Engagement</h4>
+                        <p class="client-name">Client: Alex M.</p>
+                        <p class="album-stats">Photos: 450 | Date: 2025-12-15</p>
+                    </div>
+                    <div class="album-status">
+                        <span class="status-tag ready">Ready to Share</span>
+                    </div>
+                    <div class="album-actions">
+                        <button class="action-btn share-btn">🔗 Share</button>
+                        <button class="action-btn download-btn">⬇️ Download ZIP</button>
+                    </div>
+                </div>
+
+                <div class="card gallery-item">
+                    <div class="album-details">
+                        <h4>Taylor B. - Mini Shoot</h4>
+                        <p class="client-name">Client: Taylor B.</p>
+                        <p class="album-stats">Photos: 80 | Date: 2025-12-20</p>
+                    </div>
+                    <div class="album-status">
+                        <span class="status-tag processing">Processing</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 85%;">85%</div>
+                        </div>
+                    </div>
+                    <div class="album-actions">
+                         <button class="action-btn share-btn" disabled>🔗 Share</button>
+                        <button class="action-btn download-btn">View Files</button>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="table-footer" style="text-align: right; margin-top: 25px;">
+                <button class="view-all-btn">Load More Albums →</button>
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>
