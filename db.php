@@ -2,7 +2,7 @@
 // FILE: db.php (Database Connection)
 $servername = "localhost";
 $db_username = "root";
-$db_password = "";
+$db_password = "shuttreddreams";
 $dbname = "registration";
 
 // Create connection
