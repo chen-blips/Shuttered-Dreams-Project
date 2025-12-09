@@ -141,6 +141,8 @@ function checkInquirySuccess() {
     
     if (urlParams.get('inquiry_success') === '1') {
         openModal(successModal); // Use generic function
+
+        successModal.style.cssText = 'display: block !important; z-index: 1000;';
         
         // Clear the parameter from the URL bar
         if (history.replaceState) {
