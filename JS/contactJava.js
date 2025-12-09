@@ -7,82 +7,78 @@ if (phoneInputField) {
     });
 }
 
+// --- Generic Modal Functions (NEW/FIXED) ---
+function openModal(modal) {
+    if (modal) {
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeModal(modal) {
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+    }
+}
+
+// --- Global Modal Elements ---
 const faqModal = document.getElementById('faqModal');
 const openFaqButton = document.getElementById('openFaqButton');
 const openFaqButtonFooter = document.getElementById('openFaqButtonFooter');
 const closeFaqButton = document.getElementById('closeFaqButton');
-
-function openFaqModal() {
-    faqModal.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-}
-
-function closeFaqModal() {
-    faqModal.style.display = 'none';
-    document.body.style.overflow = '';
-}
-
-if (openFaqButton) {
-    openFaqButton.addEventListener('click', function(event) {
-        event.preventDefault();
-        openFaqModal();
-    });
-}
-if (openFaqButtonFooter) {
-    openFaqButtonFooter.addEventListener('click', function(event) {
-        event.preventDefault();
-        openFaqModal();
-    });
-}
-
-if (closeFaqButton) {
-    closeFaqButton.addEventListener('click', closeFaqModal);
-}
-
-window.addEventListener('click', function(event) {
-    if (event.target == faqModal) {
-        closeFaqModal();
-    }
-});
 
 const privacyPolicyModal = document.getElementById('privacyPolicyModal');
 const openPrivacyPolicyButton = document.getElementById('openPrivacyPolicyButton');
 const openPrivacyPolicyButtonFooter = document.getElementById('openPrivacyPolicyButtonFooter');
 const closePrivacyPolicyButton = document.getElementById('closePrivacyPolicyButton');
 
-function openPrivacyPolicyModal() {
-    privacyPolicyModal.style.display = 'block';
-    document.body.style.overflow = 'hidden';
+const successModal = document.getElementById('successModal');
+const closeSuccessButton = document.getElementById('closeSuccessButton');
+
+const loadingModal = document.getElementById('loadingModal'); // NEW: Loading Modal
+const form = document.querySelector('.form-spacing'); // Form element
+
+
+// --- FAQ Modal Functions and Listeners (Now use generic functions) ---
+if (openFaqButton) {
+    openFaqButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        openModal(faqModal);
+    });
+}
+if (openFaqButtonFooter) {
+    openFaqButtonFooter.addEventListener('click', function(event) {
+        event.preventDefault();
+        openModal(faqModal);
+    });
+}
+if (closeFaqButton) {
+    closeFaqButton.addEventListener('click', function() {
+        closeModal(faqModal);
+    });
 }
 
-function closePrivacyPolicyModal() {
-    privacyPolicyModal.style.display = 'none';
-    document.body.style.overflow = '';
-}
-
+// --- Privacy Policy Modal Functions and Listeners (Now use generic functions) ---
 if (openPrivacyPolicyButton) {
     openPrivacyPolicyButton.addEventListener('click', function(event) {
         event.preventDefault();
-        openPrivacyPolicyModal();
+        openModal(privacyPolicyModal);
     });
 }
 if (openPrivacyPolicyButtonFooter) {
     openPrivacyPolicyButtonFooter.addEventListener('click', function(event) {
         event.preventDefault();
-        openPrivacyPolicyModal();
+        openModal(privacyPolicyModal);
+    });
+}
+if (closePrivacyPolicyButton) {
+    closePrivacyPolicyButton.addEventListener('click', function() {
+        closeModal(privacyPolicyModal);
     });
 }
 
-if (closePrivacyPolicyButton) {
-    closePrivacyPolicyButton.addEventListener('click', closePrivacyPolicyModal);
-}
-
-window.addEventListener('click', function(event) {
-    if (event.target == privacyPolicyModal) {
-        closePrivacyPolicyModal();
-    }
-});
-
+// Set Policy Last Updated Date
 const policyLastUpdatedElement = document.getElementById('policyLastUpdated');
 if (policyLastUpdatedElement) {
     const lastUpdatedDate = new Date('2025-06-02');
@@ -93,8 +89,10 @@ if (policyLastUpdatedElement) {
     });
 }
 
+// --- General Form/DOM Logic ---
 document.addEventListener('DOMContentLoaded', function() {
-    // This logic is good, it controls the visibility of 'other package' input
+    
+    // Package Select Logic
     const packageSelect = document.getElementById('package');
     const otherPackageInputContainer = document.getElementById('otherPackageInput');
     const otherPackageNameInput = document.getElementById('otherPackageName');
@@ -111,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // This logic is good, it controls the visibility of 'other source' input
+    // Source Select Logic
     const howFindUsSelect = document.getElementById('howFindUs');
     const otherSourceInputContainer = document.getElementById('otherSourceInput');
     const otherSourceNameInput = document.getElementById('otherSourceName');
@@ -127,34 +125,20 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
-    // NO AJAX FETCH LOGIC HERE! The form will submit normally to PHP.
 
 }); // End of DOMContentLoaded listener
 
 
-// --- Modal for Submission Success ---
-
-// Get the modal element
-const successModal = document.getElementById('successModal');
-const closeSuccessButton = document.getElementById('closeSuccessButton');
-const loadingModal = document.getElementById('loadingModal'); // NEW
-const form = document.querySelector('.form-spacing'); // NEW: Get the form element
+// --- Success Modal Logic ---
 
 /**
  * Checks for the 'inquiry_success=1' parameter in the URL and displays the success modal.
  */
 function checkInquirySuccess() {
-    // Get URL parameters
     const urlParams = new URLSearchParams(window.location.search);
     
-    // Check if the inquiry_success parameter is set to '1'
     if (urlParams.get('inquiry_success') === '1') {
-        // CRITICAL: Make sure your successModal HTML element exists in contacts.html
-        // And has the correct id="successModal"
-        if (successModal) { 
-            successModal.style.display = 'block';
-        }
+        openModal(successModal); // Use generic function
         
         // Clear the parameter from the URL bar
         if (history.replaceState) {
@@ -167,36 +151,42 @@ function checkInquirySuccess() {
 // Function to close the success modal
 if (closeSuccessButton) {
     closeSuccessButton.onclick = function() {
-        successModal.style.display = 'none';
+        closeModal(successModal); // Use generic function
     };
 }
 
-// Close modal if user clicks outside of it
+// Close modals if user clicks outside of them
 window.addEventListener('click', function(event) {
-    if (event.target == successModal) {
-        successModal.style.display = 'none';
+    if (event.target === faqModal) {
+        closeModal(faqModal);
+    }
+    if (event.target === privacyPolicyModal) {
+        closeModal(privacyPolicyModal);
+    }
+    if (event.target === successModal) { // Also handles success modal
+        closeModal(successModal);
     }
 });
 
+
+// --- FORM SUBMISSION WITH LOADING ANIMATION (FIXED) ---
+
 if (form) {
     form.addEventListener('submit', function(event) {
-        // Prevent the form from submitting immediately
         event.preventDefault();
 
-        // Check if the form is valid (native browser validation)
+        // 1. Check if the form is valid (native browser validation)
         if (!form.checkValidity()) {
-            // If not valid, let the browser show errors and stop
             form.reportValidity();
-            return;
+            return; // Stop if validation fails
         }
 
-        // 1. Show the loading modal
+        // 2. Show the loading modal
         openModal(loadingModal); 
 
-        // 2. Set the desired delay (e.g., 1500 milliseconds = 1.5 seconds)
+        // 3. Wait for the delay (1.5 seconds), then force the submission
         const submissionDelay = 1500; 
-
-        // 3. Wait for the delay, then force the submission
+        
         setTimeout(function() {
             // Re-submit the form programmatically, bypassing this event listener
             form.submit();
@@ -206,6 +196,4 @@ if (form) {
 
 
 // Add the success check to run when the document is fully loaded
-// This needs to be run outside the DOMContentLoaded block for the other form logic
-// but your current structure has it running correctly.
 document.addEventListener('DOMContentLoaded', checkInquirySuccess);
