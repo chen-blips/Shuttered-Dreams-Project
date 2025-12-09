@@ -146,7 +146,8 @@ function checkInquirySuccess() {
     const urlParams = new URLSearchParams(window.location.search);
     
     if (urlParams.get('inquiry_success') === '1') {
-        openModal(successModal); 
+        setTimeout(function() {
+            openModal(successModal); 
         
         // This is the fallback line to ensure visibility against any CSS conflict
         successModal.style.cssText = 'display: block !important; z-index: 1000;';
@@ -155,10 +156,10 @@ function checkInquirySuccess() {
         if (history.replaceState) {
             const cleanUrl = window.location.pathname + window.location.hash;
             history.replaceState(null, null, cleanUrl);
-        }
+            }
+        }, 500); // Slight delay to ensure modal is ready
     }
 }
-
 // Function to close the success modal
 if (closeSuccessButton) {
     closeSuccessButton.onclick = function() {
