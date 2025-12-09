@@ -16,7 +16,6 @@ if (!isset($conn) || mysqli_connect_errno()) {
 if (isset($_POST['submit_inquiry'])) { 
 
     // 1. Retrieve and Sanitize Input Variables
-    // Use the null coalescing operator (?? '') to safely handle potentially missing fields
     $bridename = trim($_POST['brideName'] ?? '');
     $groomname = trim($_POST['groomName'] ?? '');
     $prefferednames = trim($_POST['preferredNames'] ?? ''); 
@@ -32,15 +31,12 @@ if (isset($_POST['submit_inquiry'])) {
     
     // --- CRITICAL FIX for implode() Error ---
     // 2. Process Add-ons 
-    // Safely retrieve the 'addons' data, defaulting to an empty array if not present.
     $addonsArray = $_POST['addons'] ?? []; 
     
-    // Safety check: Ensure $addonsArray is an array before imploding.
-    // If no checkboxes were checked, PHP might not set $_POST['addons'] at all, 
-    // which is handled by ?? []. If only one checkbox was checked (and HTML was wrong), 
-    // it would be a string, which is handled below.
+    // Safety check: This is the logic that prevents the crash if only one item is selected 
+    // or if the HTML name wasn't perfect.
     if (!is_array($addonsArray)) {
-    // If it's a single string (which happens if HTML is name="addons"), wrap it in an array
+    // If it's a single string, wrap it in an array
     $addonsArray = [$addonsArray];
     }
     
