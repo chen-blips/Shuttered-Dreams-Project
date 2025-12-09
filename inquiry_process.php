@@ -13,25 +13,26 @@ if (!isset($conn) || mysqli_connect_errno()) {
 if (isset($_POST['submit_inquiry'])) { // Ensure your submit button has name="submit_inquiry"
 
     // 1. Get and sanitize input (Matching POST names from HTML)
-    $bridename = trim($_POST['brideName'] ?? '');
-    $groomname = trim($_POST['groomName'] ?? '');
-    $prefferednames = trim($_POST['preferredNames'] ?? '');
-    $email = trim($_POST['email'] ?? '');
-    $phone = trim($_POST['phone'] ?? '');
-    $location = trim($_POST['location'] ?? '');
-    $weddingdate = trim($_POST['weddingDate'] ?? '');
-    $time = trim($_POST['time'] ?? '');
-    $package = trim($_POST['package'] ?? '');
-    $otherPackageName = trim($_POST['otherPackageName'] ?? '');
-    $howFindUs = trim($_POST['howFindUs'] ?? '');
-    $otherSourceName = trim($_POST['otherSourceName'] ?? '');
+    $bridename = (string)trim($_POST['brideName'] ?? '');
+    $groomname = (string)trim($_POST['groomName'] ?? '');
+    $prefferednames = (string)trim($_POST['preferredNames'] ?? ''); // This variable was the source of the TypeError
+    $email = (string)trim($_POST['email'] ?? '');
+    $phone = (string)trim($_POST['phone'] ?? '');
+    $location = (string)trim($_POST['location'] ?? '');
+    $weddingdate = (string)trim($_POST['weddingDate'] ?? '');
+    $time = (string)trim($_POST['time'] ?? '');
+    $package = (string)trim($_POST['package'] ?? '');
+    $otherPackageName = (string)trim($_POST['otherPackageName'] ?? '');
+    $howFindUs = (string)trim($_POST['howFindUs'] ?? '');
+    $otherSourceName = (string)trim($_POST['otherSourceName'] ?? '');
     
-    // Process Add-ons (array to string)
-    $addonsArray = $_POST['addons'] ?? [];
-    $addonsList = !empty($addonsArray) ? implode(", ", $addonsArray) : ""; // Empty string if none selected
+// Process Add-ons (array to string)
+$addonsArray = $_POST['addons'] ?? [];
+$addonsList = !empty($addonsArray) ? implode(", ", $addonsArray) : "";
+$addonsList = (string)$addonsList; // Also cast the resulting list string
     
-    // Set default status and current timestamp for inquiry_date
-    $status = 'Pending';
+// Set default status
+$status = (string)'Pending';
     // Note: If you want the database to set the date/time automatically, you can remove this variable and the corresponding 's' from the bind parameters.
     // For manual setting:
     // $inquiry_date = date('Y-m-d H:i:s'); 
