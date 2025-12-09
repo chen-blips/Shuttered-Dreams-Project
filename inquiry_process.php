@@ -10,12 +10,13 @@ if (!isset($conn) || mysqli_connect_errno()) {
     exit();
 }
 
-if (isset($_POST['submit_inquiry'])) { // Ensure your submit button has name="submit_inquiry"
+if (isset($_POST['submit_inquiry'])) { 
 
     // 1. Get and sanitize input (Matching POST names from HTML)
+    // FIX: Explicitly cast to (string) to guarantee type 's' for bind_param
     $bridename = (string)trim($_POST['brideName'] ?? '');
     $groomname = (string)trim($_POST['groomName'] ?? '');
-    $prefferednames = (string)trim($_POST['preferredNames'] ?? ''); // This variable was the source of the TypeError
+    $prefferednames = (string)trim($_POST['preferredNames'] ?? ''); 
     $email = (string)trim($_POST['email'] ?? '');
     $phone = (string)trim($_POST['phone'] ?? '');
     $location = (string)trim($_POST['location'] ?? '');
@@ -26,16 +27,22 @@ if (isset($_POST['submit_inquiry'])) { // Ensure your submit button has name="su
     $howFindUs = (string)trim($_POST['howFindUs'] ?? '');
     $otherSourceName = (string)trim($_POST['otherSourceName'] ?? '');
     
-// Process Add-ons (array to string)
-$addonsArray = $_POST['addons'] ?? [];
-$addonsList = !empty($addonsArray) ? implode(", ", $addonsArray) : "";
-$addonsList = (string)$addonsList; // Also cast the resulting list string
+    // Process Add-ons (array to string)
+    $addonsArray = $_POST['addons'] ?? []; 
     
-// Set default status
-$status = (string)'Pending';
-    // Note: If you want the database to set the date/time automatically, you can remove this variable and the corresponding 's' from the bind parameters.
-    // For manual setting:
-    // $inquiry_date = date('Y-m-d H:i:s'); 
+    // START FIX FOR: TypeError: implode(): Argument #2 ($array) must be of type array, string given
+    if (!is_array($addonsArray)) {
+        // If it's a string, wrap it in an array to safely use implode
+        $addonsArray = [$addonsArray];
+    }
+    // END FIX
+
+    // Implode the array into a comma-separated string
+    $addonsList = implode(", ", $addonsArray);
+    $addonsList = (string)$addonsList;
+    
+    // Set default status
+    $status = (string)'Pending';
 
     // 2. Prepare SQL Statement to match ALL target columns
     $query = "INSERT INTO tbl_inquiries (
@@ -56,9 +63,7 @@ $status = (string)'Pending';
         exit();
     }
 
-    // 3. Bind parameters (14 strings 'ssssssssssssss', plus the status column)
-    // Assuming 'inquiry_date' is set by the database using NOW()
-    // The number of 's' matches the 14 placeholders '?' above (NOW() is not a placeholder).
+    // 3. Bind parameters (14 strings 'ssssssssssssss')
     mysqli_stmt_bind_param($stmt, 'ssssssssssssss', 
         $bridename, 
         $groomname, 
