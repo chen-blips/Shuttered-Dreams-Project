@@ -46,7 +46,7 @@ if (isset($_POST['submit_inquiry'])) {
     $status = (string)'Pending';
 
     // 2. Prepare SQL Statement to match ALL 14 target columns in tbl_inquiries
-    $query = "INSERT INTO tbl_inquiries (
+    $query = "INSERT INTO inquiries (
         bride_name, groom_name, preferred_names, client_email, client_phone, 
         event_location, wedding_date, ideal_time, package_selection, other_package_name, 
         addons, source_how_find_us, other_source_name, status, inquiry_date
