@@ -689,3 +689,15 @@ span.psw {
     float: right;
     padding-top: 16px;
 }
+
+.error-message {
+    color: #cc0000;
+    background-color: #ffeaea;
+    border: 1px solid #cc0000;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    display: none;
+}
