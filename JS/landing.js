@@ -279,10 +279,6 @@ function positionMegaMenu() {
     const megaMenu = document.getElementById('megaMenuContent');
     
     if (header && megaMenu) {
-        // REMOVED: const headerHeight = header.offsetHeight;
-        
-        // REMOVED: megaMenu.style.top = `${headerHeight}px`;
-        
         // No action needed here now, as CSS handles the positioning relative to the LI
     }
 }
@@ -296,3 +292,81 @@ function positionMegaMenu() {
                 modal.style.display = "none";
             }
         }
+
+//Login/Register error message handler!
+
+function handleAuthRedirect() {
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    // --- Error Message Definitions ---
+    const loginErrors = {
+        '1': 'Login failed. Invalid email or password.',
+        // You would use '1' for any generic login failure (invalid credentials, DB error, etc.)
+    };
+
+    const registerErrors = {
+        '1': 'Registration failed due to a server error. Please try again.',
+        '2': 'The passwords you entered do not match.',
+        '3': 'An internal error occurred. Please try again later.',
+        '4': 'This email address is already registered. Try logging in.',
+    };
+    
+    const successMessages = {
+        'register_success': 'Registration successful! You can now log in.',
+        // Add more success types here if needed
+    };
+    
+    let message = '';
+    let modalId = '';
+    let messageElementId = '';
+
+    // --- Check for Login Errors ---
+    if (urlParams.has('login_error')) {
+        const errorCode = urlParams.get('login_error');
+        message = loginErrors[errorCode] || 'An unknown login error occurred.';
+        modalId = 'loginModal';
+        messageElementId = 'login-error-message';
+    } 
+    
+    // --- Check for Registration Errors ---
+    else if (urlParams.has('register_error')) {
+        const errorCode = urlParams.get('register_error');
+        message = registerErrors[errorCode] || 'An unknown registration error occurred.';
+        modalId = 'registermodal';
+        messageElementId = 'register-error-message';
+    } 
+    
+    // --- Check for Success Messages ---
+    else if (urlParams.has('register_success')) {
+        const successCode = urlParams.get('register_success');
+        message = successMessages['register_success']; // Only one success message for now
+        modalId = 'loginModal'; // Show success message in the login modal
+        messageElementId = 'login-error-message'; 
+        
+        // Change the class/color for success (optional, requires a .success-message CSS class)
+        // document.getElementById(messageElementId).classList.add('success-message');
+    }
+
+    // --- Display the Message and Open the Modal ---
+    if (message && modalId && messageElementId) {
+        const modal = document.getElementById(modalId);
+        const messageElement = document.getElementById(messageElementId);
+        
+        if (modal && messageElement) {
+            // 1. Set the text and make the message visible
+            messageElement.innerHTML = message;
+            messageElement.style.display = 'block';
+            
+            // 2. Open the corresponding modal
+            modal.style.display = 'block';
+            
+            // 3. Clean up the URL (to prevent message from reappearing on refresh)
+            // This replaces the URL without reloading the page
+            const cleanUrl = window.location.pathname;
+            history.replaceState(null, null, cleanUrl);
+        }
+    }
+}
+
+// Ensure the function runs when the page loads
+document.addEventListener('DOMContentLoaded', handleAuthRedirect);
