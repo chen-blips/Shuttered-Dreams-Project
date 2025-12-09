@@ -196,4 +196,4 @@ if (form) {
 
 
 // Add the success check to run when the document is fully loaded
-document.addEventListener('DOMContentLoaded', checkInquirySuccess);
+checkInquirySuccess();
