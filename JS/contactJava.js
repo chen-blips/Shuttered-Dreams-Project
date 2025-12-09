@@ -1,3 +1,4 @@
+// International Phone Input setup
 const phoneInputField = document.querySelector("#phone");
 if (phoneInputField) {
     window.intlTelInput(phoneInputField, {
@@ -7,6 +8,9 @@ if (phoneInputField) {
     });
 }
 
+// =========================================================
+// 1. FAQ Modal Logic (Executed immediately)
+// =========================================================
 const faqModal = document.getElementById('faqModal');
 const openFaqButton = document.getElementById('openFaqButton');
 const openFaqButtonFooter = document.getElementById('openFaqButtonFooter');
@@ -45,6 +49,9 @@ window.addEventListener('click', function(event) {
     }
 });
 
+// =========================================================
+// 2. Privacy Policy Modal Logic (Executed immediately)
+// =========================================================
 const privacyPolicyModal = document.getElementById('privacyPolicyModal');
 const openPrivacyPolicyButton = document.getElementById('openPrivacyPolicyButton');
 const openPrivacyPolicyButtonFooter = document.getElementById('openPrivacyPolicyButtonFooter');
@@ -83,6 +90,9 @@ window.addEventListener('click', function(event) {
     }
 });
 
+// =========================================================
+// 3. Date Display Logic (Executed immediately)
+// =========================================================
 const policyLastUpdatedElement = document.getElementById('policyLastUpdated');
 if (policyLastUpdatedElement) {
     const lastUpdatedDate = new Date('2025-06-02');
@@ -93,49 +103,47 @@ if (policyLastUpdatedElement) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    // This logic is good, it controls the visibility of 'other package' input
-    const packageSelect = document.getElementById('package');
-    const otherPackageInputContainer = document.getElementById('otherPackageInput');
-    const otherPackageNameInput = document.getElementById('otherPackageName');
+// =========================================================
+// 4. Input Visibility Toggles (Executed immediately)
+// CRITICAL FIX: Moved outside the large DOMContentLoaded wrapper
+// =========================================================
 
-    if (packageSelect && otherPackageInputContainer && otherPackageNameInput) {
-        packageSelect.addEventListener('change', function() {
-            if (packageSelect.value === 'other_package') {
-                otherPackageInputContainer.style.display = 'block';
-                otherPackageNameInput.setAttribute('required', 'required');
-            } else {
-                otherPackageInputContainer.style.display = 'none';
-                otherPackageNameInput.removeAttribute('required');
-            }
-        });
-    }
+const packageSelect = document.getElementById('package');
+const otherPackageInputContainer = document.getElementById('otherPackageInput');
+const otherPackageNameInput = document.getElementById('otherPackageName');
 
-    // This logic is good, it controls the visibility of 'other source' input
-    const howFindUsSelect = document.getElementById('howFindUs');
-    const otherSourceInputContainer = document.getElementById('otherSourceInput');
-    const otherSourceNameInput = document.getElementById('otherSourceName');
+if (packageSelect && otherPackageInputContainer && otherPackageNameInput) {
+    packageSelect.addEventListener('change', function() {
+        if (packageSelect.value === 'other_package') {
+            otherPackageInputContainer.style.display = 'block';
+            otherPackageNameInput.setAttribute('required', 'required');
+        } else {
+            otherPackageInputContainer.style.display = 'none';
+            otherPackageNameInput.removeAttribute('required');
+        }
+    });
+}
 
-    if (howFindUsSelect && otherSourceInputContainer && otherSourceNameInput) {
-        howFindUsSelect.addEventListener('change', function() {
-            if (howFindUsSelect.value === 'other_source') {
-                otherSourceInputContainer.style.display = 'block';
-                otherSourceNameInput.setAttribute('required', 'required');
-            } else {
-                otherSourceInputContainer.style.display = 'none';
-                otherSourceNameInput.removeAttribute('required');
-            }
-        });
-    }
-    
-    // NO AJAX FETCH LOGIC HERE! The form will submit normally to PHP.
+const howFindUsSelect = document.getElementById('howFindUs');
+const otherSourceInputContainer = document.getElementById('otherSourceInput');
+const otherSourceNameInput = document.getElementById('otherSourceName');
 
-}); // End of DOMContentLoaded listener
+if (howFindUsSelect && otherSourceInputContainer && otherSourceNameInput) {
+    howFindUsSelect.addEventListener('change', function() {
+        if (howFindUsSelect.value === 'other_source') {
+            otherSourceInputContainer.style.display = 'block';
+            otherSourceNameInput.setAttribute('required', 'required');
+        } else {
+            otherSourceInputContainer.style.display = 'none';
+            otherSourceNameInput.removeAttribute('required');
+        }
+    });
+}
 
 
-// --- Modal for Submission Success ---
-
-// Get the modal element
+// =========================================================
+// 5. Success Modal Logic (Waits for DOM to load before checking URL)
+// =========================================================
 const successModal = document.getElementById('successModal');
 const closeSuccessButton = document.getElementById('closeSuccessButton');
 
@@ -143,13 +151,9 @@ const closeSuccessButton = document.getElementById('closeSuccessButton');
  * Checks for the 'inquiry_success=1' parameter in the URL and displays the success modal.
  */
 function checkInquirySuccess() {
-    // Get URL parameters
     const urlParams = new URLSearchParams(window.location.search);
     
-    // Check if the inquiry_success parameter is set to '1'
     if (urlParams.get('inquiry_success') === '1') {
-        // CRITICAL: Make sure your successModal HTML element exists in contacts.html
-        // And has the correct id="successModal"
         if (successModal) { 
             successModal.style.display = 'block';
         }
@@ -178,6 +182,4 @@ window.addEventListener('click', function(event) {
 
 
 // Add the success check to run when the document is fully loaded
-// This needs to be run outside the DOMContentLoaded block for the other form logic
-// but your current structure has it running correctly.
 document.addEventListener('DOMContentLoaded', checkInquirySuccess);
