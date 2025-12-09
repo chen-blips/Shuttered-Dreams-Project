@@ -7,7 +7,7 @@ if (phoneInputField) {
     });
 }
 
-// --- Generic Modal Functions (NEW/FIXED) ---
+// --- GENERIC MODAL FUNCTIONS (CRITICAL FIX: Needed for loading and success modals) ---
 function openModal(modal) {
     if (modal) {
         modal.style.display = 'block';
@@ -21,8 +21,10 @@ function closeModal(modal) {
         document.body.style.overflow = '';
     }
 }
+// --- END GENERIC MODAL FUNCTIONS ---
 
-// --- Global Modal Elements ---
+
+// --- Global Modal Elements and Form ---
 const faqModal = document.getElementById('faqModal');
 const openFaqButton = document.getElementById('openFaqButton');
 const openFaqButtonFooter = document.getElementById('openFaqButtonFooter');
@@ -36,11 +38,13 @@ const closePrivacyPolicyButton = document.getElementById('closePrivacyPolicyButt
 const successModal = document.getElementById('successModal');
 const closeSuccessButton = document.getElementById('closeSuccessButton');
 
-const loadingModal = document.getElementById('loadingModal'); // NEW: Loading Modal
+const loadingModal = document.getElementById('loadingModal'); // New loading modal element
 const form = document.querySelector('.form-spacing'); // Form element
 
 
-// --- FAQ Modal Functions and Listeners (Now use generic functions) ---
+// --- All Modal Listeners (Now use generic open/close functions) ---
+
+// FAQ Modals
 if (openFaqButton) {
     openFaqButton.addEventListener('click', function(event) {
         event.preventDefault();
@@ -59,7 +63,7 @@ if (closeFaqButton) {
     });
 }
 
-// --- Privacy Policy Modal Functions and Listeners (Now use generic functions) ---
+// Privacy Policy Modals
 if (openPrivacyPolicyButton) {
     openPrivacyPolicyButton.addEventListener('click', function(event) {
         event.preventDefault();
@@ -89,10 +93,9 @@ if (policyLastUpdatedElement) {
     });
 }
 
-// --- General Form/DOM Logic ---
+
 document.addEventListener('DOMContentLoaded', function() {
-    
-    // Package Select Logic
+    // Other/Package Select Logic
     const packageSelect = document.getElementById('package');
     const otherPackageInputContainer = document.getElementById('otherPackageInput');
     const otherPackageNameInput = document.getElementById('otherPackageName');
@@ -109,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Source Select Logic
+    // Other/Source Select Logic
     const howFindUsSelect = document.getElementById('howFindUs');
     const otherSourceInputContainer = document.getElementById('otherSourceInput');
     const otherSourceNameInput = document.getElementById('otherSourceName');
@@ -125,8 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-}); // End of DOMContentLoaded listener
+});
 
 
 // --- Success Modal Logic ---
@@ -163,13 +165,13 @@ window.addEventListener('click', function(event) {
     if (event.target === privacyPolicyModal) {
         closeModal(privacyPolicyModal);
     }
-    if (event.target === successModal) { // Also handles success modal
+    if (event.target === successModal) {
         closeModal(successModal);
     }
 });
 
 
-// --- FORM SUBMISSION WITH LOADING ANIMATION (FIXED) ---
+// --- FORM SUBMISSION WITH LOADING ANIMATION ---
 
 if (form) {
     form.addEventListener('submit', function(event) {
@@ -178,7 +180,7 @@ if (form) {
         // 1. Check if the form is valid (native browser validation)
         if (!form.checkValidity()) {
             form.reportValidity();
-            return; // Stop if validation fails
+            return; 
         }
 
         // 2. Show the loading modal
@@ -188,12 +190,10 @@ if (form) {
         const submissionDelay = 1500; 
         
         setTimeout(function() {
-            // Re-submit the form programmatically, bypassing this event listener
             form.submit();
         }, submissionDelay);
     });
 }
 
-
-// Add the success check to run when the document is fully loaded
+// Add the success check to run immediately after script load (CRITICAL FIX: Replaced DOMContentLoaded)
 checkInquirySuccess();
