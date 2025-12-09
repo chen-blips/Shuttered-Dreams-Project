@@ -94,6 +94,7 @@ if (policyLastUpdatedElement) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    // This logic is good, it controls the visibility of 'other package' input
     const packageSelect = document.getElementById('package');
     const otherPackageInputContainer = document.getElementById('otherPackageInput');
     const otherPackageNameInput = document.getElementById('otherPackageName');
@@ -110,6 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // This logic is good, it controls the visibility of 'other source' input
     const howFindUsSelect = document.getElementById('howFindUs');
     const otherSourceInputContainer = document.getElementById('otherSourceInput');
     const otherSourceNameInput = document.getElementById('otherSourceName');
@@ -125,43 +127,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    
+    // NO AJAX FETCH LOGIC HERE! The form will submit normally to PHP.
 
-    const form = document.querySelector('form[data-redirect]');
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const formData = new FormData(form);
-            const actionUrl = form.getAttribute('action');
-            const redirectUrl = form.getAttribute('data-redirect');
-            const errorUrl = form.getAttribute('data-error');
+}); // End of DOMContentLoaded listener
 
-            fetch(actionUrl, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            })
-            .then(response => {
-                if (response.ok) {
-                    window.location.href = redirectUrl;
-                } else {
-                    return response.json().then(errorData => {
-                        console.error('Form submission error:', errorData);
-                        window.location.href = errorUrl;
-                    }).catch(() => {
-                        console.error('Form submission error: Non-JSON response');
-                        window.location.href = errorUrl;
-                    });
-                }
-            })
-            .catch(error => {
-                console.error('Network or fetch error:', error);
-                window.location.href = errorUrl;
-            });
-        });
-    }
-});
 
 // --- Modal for Submission Success ---
 
@@ -178,10 +148,13 @@ function checkInquirySuccess() {
     
     // Check if the inquiry_success parameter is set to '1'
     if (urlParams.get('inquiry_success') === '1') {
-        successModal.style.display = 'block';
+        // CRITICAL: Make sure your successModal HTML element exists in contacts.html
+        // And has the correct id="successModal"
+        if (successModal) { 
+            successModal.style.display = 'block';
+        }
         
-        // Optional: Clear the parameter from the URL bar to prevent the modal from reappearing 
-        // if the user refreshes the page. (Requires HTML5 pushState)
+        // Clear the parameter from the URL bar
         if (history.replaceState) {
             const cleanUrl = window.location.pathname + window.location.hash;
             history.replaceState(null, null, cleanUrl);
@@ -190,9 +163,11 @@ function checkInquirySuccess() {
 }
 
 // Function to close the success modal
-closeSuccessButton.onclick = function() {
-    successModal.style.display = 'none';
-};
+if (closeSuccessButton) {
+    closeSuccessButton.onclick = function() {
+        successModal.style.display = 'none';
+    };
+}
 
 // Close modal if user clicks outside of it
 window.addEventListener('click', function(event) {
@@ -203,4 +178,6 @@ window.addEventListener('click', function(event) {
 
 
 // Add the success check to run when the document is fully loaded
+// This needs to be run outside the DOMContentLoaded block for the other form logic
+// but your current structure has it running correctly.
 document.addEventListener('DOMContentLoaded', checkInquirySuccess);

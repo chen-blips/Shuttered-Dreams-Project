@@ -2,20 +2,17 @@
 
 session_start();
 
-// Assuming db.php establishes $conn and includes connection logic
 require('inquiry_db.php'); 
 
 if (!isset($conn) || mysqli_connect_errno()) {
-    // Log detailed connection error
     error_log("Database connection failed: " . mysqli_connect_error());
     header("Location: contacts.html?inquiry_error=2"); 
     exit();
 }
 
-// Ensure the form's submit button has name="submit_inquiry"
 if (isset($_POST['submit_inquiry'])) { 
 
-    // 1. Get and explicitly cast input to (string) to guarantee type 's' for bind_param
+    // 1. Get and explicitly cast input to (string) for bind_param safety
     $bridename = (string)trim($_POST['brideName'] ?? '');
     $groomname = (string)trim($_POST['groomName'] ?? '');
     $prefferednames = (string)trim($_POST['preferredNames'] ?? ''); 
@@ -29,23 +26,18 @@ if (isset($_POST['submit_inquiry'])) {
     $howFindUs = (string)trim($_POST['howFindUs'] ?? '');
     $otherSourceName = (string)trim($_POST['otherSourceName'] ?? '');
     
-    // Process Add-ons (array to string)
+    // Process Add-ons (now guaranteed to be an array due to name="addons[]" in HTML)
     $addonsArray = $_POST['addons'] ?? []; 
     
-    // FIX for: TypeError: implode(): Argument #2 must be of type array, string given
-    if (!is_array($addonsArray)) {
-        // If it's a single string (which happens with one checkbox), wrap it in an array
-        $addonsArray = [$addonsArray];
-    }
-
     // Implode the array into a comma-separated string
+    // This is now safe because $addonsArray is always an array
     $addonsList = implode(", ", $addonsArray);
-    $addonsList = (string)$addonsList; // Final cast for safety
+    $addonsList = (string)$addonsList; 
     
-    // Set default status (must match one of the allowed enum values, e.g., 'Pending')
+    // Set default status
     $status = (string)'Pending';
 
-    // 2. Prepare SQL Statement to match ALL 14 target columns in tbl_inquiries
+    // 2. Prepare SQL Statement
     $query = "INSERT INTO inquiries (
         bride_name, groom_name, preferred_names, client_email, client_phone, 
         event_location, wedding_date, ideal_time, package_selection, other_package_name, 
@@ -64,8 +56,7 @@ if (isset($_POST['submit_inquiry'])) {
         exit();
     }
 
-    // 3. Bind parameters: 'ssssssssssssss' (14 strings)
-    // The order MUST match the columns listed in the query above.
+    // 3. Bind parameters (14 strings 'ssssssssssssss')
     mysqli_stmt_bind_param($stmt, 'ssssssssssssss', 
         $bridename, 
         $groomname, 
@@ -86,17 +77,16 @@ if (isset($_POST['submit_inquiry'])) {
     if (mysqli_stmt_execute($stmt)) {
         // Inquiry submitted successfully
         mysqli_stmt_close($stmt);
+        // CRITICAL: Redirect back to contacts.html with the success parameter
         header("Location: contacts.html?inquiry_success=1"); 
         exit();
     } else {
-        // This block catches the 'Data too long' error or similar database failures
         error_log("MySQLi Execute Error: " . mysqli_stmt_error($stmt));
         mysqli_stmt_close($stmt);
         header("Location: contacts.html?inquiry_error=2");
         exit();
     }
 } else {
-    // If the script is accessed directly without POST data
     header("Location: contacts.html");
     exit();
 }
