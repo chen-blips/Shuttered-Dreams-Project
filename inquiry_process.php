@@ -2,7 +2,7 @@
 
 // Ensure you have a working db.php file in the same directory for the connection.
 // This example assumes your connection variable is $conn.
-require('db.php'); 
+require('inquiry_db.php'); 
 
 // Check if the database connection failed
 if (!isset($conn) || mysqli_connect_errno()) {
@@ -52,7 +52,7 @@ if (isset($_POST['submit_inquiry'])) {
 
     // 3. Prepare SQL Statement
     // Insert into the columns matching your database structure
-    $query = "INSERT INTO tbl_inquiries (
+    $query = "INSERT INTO inquiries (
         bride_name, groom_name, preferred_names, client_email, client_phone, 
         event_location, wedding_date, ideal_time, package_selection, other_package_name, 
         addons, source_how_find_us, other_source_name, status, inquiry_date
