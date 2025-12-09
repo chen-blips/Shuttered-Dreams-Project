@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings Record - Shuttered Dreams</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="logo-casing">
+                <div class="logo-container">
+                <div class="logo-centered">
+                <img src="images/SDP_Logo0.1_White.png" alt="Shuttered Dreams Logo" class="sidebar-logo">
+            </div>
+                <span class="logo-separator"></span>
+                <span class="logo-text">SHUTTERED DREAMS<br> PROJECT</span>
+            </div>
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.php"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                    <li class="active"><a href="bookings.php"><i class="fas fa-calendar-check"></i> Bookings</a></li>
+                    <li><a href="inquiries.php"><i class="fas fa-envelope"></i> Leads/Inquiries</a></li>
+                    <li><a href="galleries.html"><i class="fas fa-images"></i> Galleries & Albums</a></li>
+                    <li><a href="clients.php"><i class="fas fa-users"></i> Clients</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h1>Booking Records</h1>
+                <div class="user-profile">
+                    Admin User <i class="fas fa-user-circle"></i>
+                </div>
+            </header>
+            
+            <div class="panel bookings-list-panel">
+                <h2>🗓️ Upcoming Bookings</h2>
+                
+                <div class="table-actions" style="display: flex; justify-content: flex-end; gap: 10px; margin-bottom: 15px;">
+                    <button class="action-btn">Export List</button>
+                    <button class="btn-primary" style="font-weight: 600;">➕ Add New Booking</button> 
+                </div>
+
+                <table class="bookings-table">
+                    <thead>
+                        <tr>
+                            <th>Date & Time</th>
+                            <th>Client Name</th>
+                            <th>Package</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <tr>
+                            <td colspan="5" style="text-align: center;">No upcoming bookings found.</td>
+                        </tr>
+                    </tbody>          
+                </table>
+                
+                <div class="table-footer" style="text-align: right; margin-top: 15px;">
+                    <a href="#" class="view-all-btn">View Full Calendar →</a>
+                </div>
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>

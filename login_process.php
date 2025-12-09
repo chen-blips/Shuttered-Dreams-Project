@@ -57,7 +57,7 @@ if (isset($_POST['login'])) {
             // 🎯 FIX: Check the role using the database column case: $row['Role']
             if ($row['Role'] === 'admin') {
                 // Admin user: Redirect to the admin dashboard
-                header("Location: dashboard.php");
+                header("Location: dashboard.html");
                 exit();
             } else {
                 // Standard user: Redirect to the regular dashboard
