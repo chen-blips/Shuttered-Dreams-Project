@@ -3,18 +3,14 @@
 
 session_start();
 // Include the dedicated database connection file
-require('db.php');
-// FILE: login_process.php (At the very top)
-// ...
 require('db.php'); 
 
-// Add this check:
+// Add this check for a failed database connection
 if (!isset($conn) || mysqli_connect_errno()) {
     error_log("Database connection failed.");
     header("Location: landing.html?login_error=2"); 
     exit();
 }
-// ...
 
 if (isset($_POST['login'])) {
 
@@ -24,8 +20,10 @@ if (isset($_POST['login'])) {
 
     // --- 2. Use Prepared Statement to fetch user and role ---
 
-    // Select all user data, including the 'role' column
-    $query = "SELECT * FROM tbl_reginfo WHERE email = ?";
+    // Select all user data, including the 'Role' and 'Password' columns
+    // NOTE: MySQL column names are case-sensitive on some systems (e.g., Linux), 
+    // but the column name in the result array will always match the case in the DB schema.
+    $query = "SELECT * FROM tbl_reginfo WHERE Email = ?";
     
     $stmt = mysqli_prepare($conn, $query);
     
@@ -46,15 +44,18 @@ if (isset($_POST['login'])) {
     if ($result && mysqli_num_rows($result) === 1) {
         $row = mysqli_fetch_assoc($result);
 
-        // Verify the input password against the HASHED password in the database
-        if (password_verify($password, $row['password'])) {
+        // 🎯 FIX: Access the password using the database column case: $row['Password']
+        if (password_verify($password, $row['Password'])) {
             
             // Password is correct, establish session variables
-            $_SESSION['email'] = $row['email'];
-            $_SESSION['role'] = $row['role']; // Store the user's role in the session
+            $_SESSION['email'] = $row['Email']; 
+            
+            // 🎯 FIX: Access the role using the database column case: $row['Role']
+            $_SESSION['role'] = $row['Role']; 
 
             // Check if the user is an admin
-            if ($row['role'] === 'admin') {
+            // 🎯 FIX: Check the role using the database column case: $row['Role']
+            if ($row['Role'] === 'admin') {
                 // Admin user: Redirect to the admin dashboard
                 header("Location: dashboard.php");
                 exit();
@@ -65,6 +66,9 @@ if (isset($_POST['login'])) {
             }
         }
     }
+    
+    // Introduce a slight delay for security against brute-force attacks
+    usleep(rand(500000, 1000000));
     
     // Redirect back on failure (login_error=1 for invalid credentials)
     header("Location: landing.html?login_error=1");
