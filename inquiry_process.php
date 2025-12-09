@@ -62,7 +62,7 @@ if (isset($_POST['submit_inquiry'])) {
     
     if ($stmt === false) {
         error_log("MySQLi Prepare Error: " . mysqli_error($conn));
-        header("Location: contacts.html?inquiry_error=2");
+        header("Location: contacts.html?inquiry_error");
         exit();
     }
 
@@ -89,13 +89,13 @@ if (isset($_POST['submit_inquiry'])) {
         // Success: Close the statement and redirect back to contacts.html
         mysqli_stmt_close($stmt);
         // CRITICAL: This URL parameter triggers the success modal in your JavaScript
-        header("Location: contacts.html?inquiry_success=1"); 
+        header("Location: contacts.html?inquiry_success"); 
         exit();
     } else {
         // Execution Failure
         error_log("MySQLi Execute Error: " . mysqli_stmt_error($stmt));
         mysqli_stmt_close($stmt);
-        header("Location: contacts.html?inquiry_error=2");
+        header("Location: contacts.html?inquiry_error");
         exit();
     }
 
