@@ -665,29 +665,25 @@ footer {
     }
 }
 /* --- Loading Modal Styles --- */
-/* Ensure the modal content is centered vertically */
 #loadingModal {
     display: none; /* Hidden by default */
     align-items: center;
     justify-content: center;
     padding-top: 0;
-    /* CRITICAL: Ensure it is fixed and takes up the whole screen */
     position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 100; /* Must be on top */
-    background-color: rgba(0,0,0,0.6); /* Dark overlay */
+    z-index: 100;
+    background-color: rgba(0,0,0,0.6); 
 }
 
-/* Ensure the modal content is smaller for a cleaner look */
 .modal-loading {
     max-width: 300px;
     text-align: center;
     padding: 30px;
     background-color: #fefefe;
-    /* CRITICAL: Use the same styles as .modal-content */
     margin: auto; 
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -702,15 +698,15 @@ footer {
     color: #2563eb;
 }
 
-/* Spinner Styles (CRITICAL: Animation) */
+/* Spinner Styles */
 .loading-spinner {
-    border: 6px solid #f3f3f3; /* Light grey */
-    border-top: 6px solid #2563eb; /* Blue spinner */
+    border: 6px solid #f3f3f3; 
+    border-top: 6px solid #2563eb; 
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    animation: spin 1s linear infinite; /* Key animation property */
-    margin: 0 auto; /* Center the spinner */
+    animation: spin 1s linear infinite; 
+    margin: 0 auto; 
 }
 
 @keyframes spin {
