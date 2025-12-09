@@ -1,44 +1,58 @@
 <?php 
 
-session_start();
+// Ensure you have a working db.php file in the same directory for the connection.
+// This example assumes your connection variable is $conn.
+require('db.php'); 
 
-require('inquiry_db.php'); 
-
+// Check if the database connection failed
 if (!isset($conn) || mysqli_connect_errno()) {
+    // Log the error for debugging
     error_log("Database connection failed: " . mysqli_connect_error());
+    // Redirect to an error page (or the contacts page with an error code)
     header("Location: contacts.html?inquiry_error=2"); 
     exit();
 }
 
 if (isset($_POST['submit_inquiry'])) { 
 
-    // 1. Get and explicitly cast input to (string) for bind_param safety
-    $bridename = (string)trim($_POST['brideName'] ?? '');
-    $groomname = (string)trim($_POST['groomName'] ?? '');
-    $prefferednames = (string)trim($_POST['preferredNames'] ?? ''); 
-    $email = (string)trim($_POST['email'] ?? '');
-    $phone = (string)trim($_POST['phone'] ?? '');
-    $location = (string)trim($_POST['location'] ?? '');
-    $weddingdate = (string)trim($_POST['weddingDate'] ?? '');
-    $time = (string)trim($_POST['time'] ?? '');
-    $package = (string)trim($_POST['package'] ?? '');
-    $otherPackageName = (string)trim($_POST['otherPackageName'] ?? '');
-    $howFindUs = (string)trim($_POST['howFindUs'] ?? '');
-    $otherSourceName = (string)trim($_POST['otherSourceName'] ?? '');
+    // 1. Retrieve and Sanitize Input Variables
+    // Use the null coalescing operator (?? '') to safely handle potentially missing fields
+    $bridename = trim($_POST['brideName'] ?? '');
+    $groomname = trim($_POST['groomName'] ?? '');
+    $prefferednames = trim($_POST['preferredNames'] ?? ''); 
+    $email = trim($_POST['email'] ?? '');
+    $phone = trim($_POST['phone'] ?? '');
+    $location = trim($_POST['location'] ?? '');
+    $weddingdate = trim($_POST['weddingDate'] ?? '');
+    $time = trim($_POST['time'] ?? '');
+    $package = trim($_POST['package'] ?? '');
+    $otherPackageName = trim($_POST['otherPackageName'] ?? '');
+    $howFindUs = trim($_POST['howFindUs'] ?? '');
+    $otherSourceName = trim($_POST['otherSourceName'] ?? '');
     
-    // Process Add-ons (now guaranteed to be an array due to name="addons[]" in HTML)
+    // --- CRITICAL FIX for implode() Error ---
+    // 2. Process Add-ons 
+    // Safely retrieve the 'addons' data, defaulting to an empty array if not present.
     $addonsArray = $_POST['addons'] ?? []; 
     
-    // Implode the array into a comma-separated string
-    // This is now safe because $addonsArray is always an array
-    $addonsList = implode(", ", $addonsArray);
-    $addonsList = (string)$addonsList; 
+    // Safety check: Ensure $addonsArray is an array before imploding.
+    // If no checkboxes were checked, PHP might not set $_POST['addons'] at all, 
+    // which is handled by ?? []. If only one checkbox was checked (and HTML was wrong), 
+    // it would be a string, which is handled below.
+    if (!is_array($addonsArray)) {
+    // If it's a single string (which happens if HTML is name="addons"), wrap it in an array
+    $addonsArray = [$addonsArray];
+    }
     
-    // Set default status
-    $status = (string)'Pending';
+    // Implode the array into a comma-separated string for database insertion 
+    $addonsList = implode(", ", $addonsArray);
+    
+    // Set default status (Database column 'status' is enum('Pending', 'Contacted', ...))
+    $status = 'Pending';
 
-    // 2. Prepare SQL Statement
-    $query = "INSERT INTO inquiries (
+    // 3. Prepare SQL Statement
+    // Insert into the columns matching your database structure
+    $query = "INSERT INTO tbl_inquiries (
         bride_name, groom_name, preferred_names, client_email, client_phone, 
         event_location, wedding_date, ideal_time, package_selection, other_package_name, 
         addons, source_how_find_us, other_source_name, status, inquiry_date
@@ -56,7 +70,7 @@ if (isset($_POST['submit_inquiry'])) {
         exit();
     }
 
-    // 3. Bind parameters (14 strings 'ssssssssssssss')
+    // 4. Bind parameters (14 strings 'ssssssssssssss')
     mysqli_stmt_bind_param($stmt, 'ssssssssssssss', 
         $bridename, 
         $groomname, 
@@ -74,19 +88,23 @@ if (isset($_POST['submit_inquiry'])) {
         $status
     );
     
+    // 5. Execute and Redirect
     if (mysqli_stmt_execute($stmt)) {
-        // Inquiry submitted successfully
+        // Success: Close the statement and redirect back to contacts.html
         mysqli_stmt_close($stmt);
-        // CRITICAL: Redirect back to contacts.html with the success parameter
+        // CRITICAL: This URL parameter triggers the success modal in your JavaScript
         header("Location: contacts.html?inquiry_success=1"); 
         exit();
     } else {
+        // Execution Failure
         error_log("MySQLi Execute Error: " . mysqli_stmt_error($stmt));
         mysqli_stmt_close($stmt);
         header("Location: contacts.html?inquiry_error=2");
         exit();
     }
+
 } else {
+    // If someone tries to access the page directly without submitting the form
     header("Location: contacts.html");
     exit();
 }
