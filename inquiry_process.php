@@ -3,7 +3,7 @@
 session_start();
 
 // Assuming db.php establishes $conn and includes connection logic
-require('db.php'); 
+require('inquiry_db.php'); 
 
 if (!isset($conn) || mysqli_connect_errno()) {
     // Log detailed connection error
