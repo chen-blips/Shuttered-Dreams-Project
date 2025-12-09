@@ -666,10 +666,11 @@ footer {
 }
 /* --- Loading Modal Styles --- */
 #loadingModal {
-    display: none; /* Hidden by default */
+    display: none; 
     align-items: center;
     justify-content: center;
     padding-top: 0;
+    /* CRITICAL positioning for full screen overlay */
     position: fixed; 
     top: 0;
     left: 0;
@@ -679,33 +680,14 @@ footer {
     background-color: rgba(0,0,0,0.6); 
 }
 
-.modal-loading {
-    max-width: 300px;
-    text-align: center;
-    padding: 30px;
-    background-color: #fefefe;
-    margin: auto; 
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.loading-text {
-    font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    padding-bottom: 0;
-    border-bottom: none;
-    color: #2563eb;
-}
-
 /* Spinner Styles */
 .loading-spinner {
-    border: 6px solid #f3f3f3; 
-    border-top: 6px solid #2563eb; 
+    border: 6px solid #f3f3f3; /* Light grey base */
+    border-top: 6px solid #2563eb; /* Blue spinning part */
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    animation: spin 1s linear infinite; 
+    animation: spin 1s linear infinite; /* CRITICAL animation */
     margin: 0 auto; 
 }
 

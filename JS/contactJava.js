@@ -7,7 +7,7 @@ if (phoneInputField) {
     });
 }
 
-// --- GENERIC MODAL FUNCTIONS (CRITICAL FIX: Needed for loading and success modals) ---
+// --- GENERIC MODAL FUNCTIONS (CRITICAL) ---
 function openModal(modal) {
     if (modal) {
         modal.style.display = 'block';
@@ -42,7 +42,7 @@ const loadingModal = document.getElementById('loadingModal'); // New loading mod
 const form = document.querySelector('.form-spacing'); // Form element
 
 
-// --- All Modal Listeners (Now use generic open/close functions) ---
+// --- All Modal Listeners ---
 
 // FAQ Modals
 if (openFaqButton) {
@@ -195,5 +195,5 @@ if (form) {
     });
 }
 
-// Add the success check to run immediately after script load (CRITICAL FIX: Replaced DOMContentLoaded)
+// Add the success check to run immediately after script load
 checkInquirySuccess();
