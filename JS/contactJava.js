@@ -162,3 +162,45 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// --- Modal for Submission Success ---
+
+// Get the modal element
+const successModal = document.getElementById('successModal');
+const closeSuccessButton = document.getElementById('closeSuccessButton');
+
+/**
+ * Checks for the 'inquiry_success=1' parameter in the URL and displays the success modal.
+ */
+function checkInquirySuccess() {
+    // Get URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    // Check if the inquiry_success parameter is set to '1'
+    if (urlParams.get('inquiry_success') === '1') {
+        successModal.style.display = 'block';
+        
+        // Optional: Clear the parameter from the URL bar to prevent the modal from reappearing 
+        // if the user refreshes the page. (Requires HTML5 pushState)
+        if (history.replaceState) {
+            const cleanUrl = window.location.pathname + window.location.hash;
+            history.replaceState(null, null, cleanUrl);
+        }
+    }
+}
+
+// Function to close the success modal
+closeSuccessButton.onclick = function() {
+    successModal.style.display = 'none';
+};
+
+// Close modal if user clicks outside of it
+window.addEventListener('click', function(event) {
+    if (event.target == successModal) {
+        successModal.style.display = 'none';
+    }
+});
+
+
+// Add the success check to run when the document is fully loaded
+document.addEventListener('DOMContentLoaded', checkInquirySuccess);
