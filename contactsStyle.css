@@ -664,34 +664,3 @@ footer {
         font-size: 14px;
     }
 }
-/* --- Loading Modal Styles --- */
-#loadingModal {
-    display: none; 
-    align-items: center;
-    justify-content: center;
-    padding-top: 0;
-    /* CRITICAL positioning for full screen overlay */
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    background-color: rgba(0,0,0,0.6); 
-}
-
-/* Spinner Styles */
-.loading-spinner {
-    border: 6px solid #f3f3f3; /* Light grey base */
-    border-top: 6px solid #2563eb; /* Blue spinning part */
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite; /* CRITICAL animation */
-    margin: 0 auto; 
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}

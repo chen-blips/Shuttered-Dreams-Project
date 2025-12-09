@@ -7,7 +7,8 @@ if (phoneInputField) {
     });
 }
 
-// --- GENERIC MODAL FUNCTIONS (CRITICAL) ---
+// --- GENERIC MODAL FUNCTIONS ---
+// Kept these functions as they are used by the Success/FAQ/Privacy modals
 function openModal(modal) {
     if (modal) {
         modal.style.display = 'block';
@@ -24,7 +25,7 @@ function closeModal(modal) {
 // --- END GENERIC MODAL FUNCTIONS ---
 
 
-// --- Global Modal Elements and Form ---
+// --- Global Modal Elements ---
 const faqModal = document.getElementById('faqModal');
 const openFaqButton = document.getElementById('openFaqButton');
 const openFaqButtonFooter = document.getElementById('openFaqButtonFooter');
@@ -38,8 +39,7 @@ const closePrivacyPolicyButton = document.getElementById('closePrivacyPolicyButt
 const successModal = document.getElementById('successModal');
 const closeSuccessButton = document.getElementById('closeSuccessButton');
 
-const loadingModal = document.getElementById('loadingModal'); // New loading modal element
-const form = document.querySelector('.form-spacing'); // Form element
+// The 'form' and 'loadingModal' variables have been removed here.
 
 
 // --- All Modal Listeners ---
@@ -131,18 +131,25 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// --- Success Modal Logic ---
+// --- Success Modal Logic (Remains unchanged and is ready to work) ---
 
 /**
  * Checks for the 'inquiry_success=1' parameter in the URL and displays the success modal.
  */
 function checkInquirySuccess() {
+    // CRITICAL: Ensure the modal element exists
+    if (!successModal) {
+        console.error("Success modal element not found!");
+        return; 
+    }
+    
     const urlParams = new URLSearchParams(window.location.search);
     
     if (urlParams.get('inquiry_success') === '1') {
-        openModal(successModal); // Use generic function
-
-        successModal.style.display = 'display: block !important; z-index: 1000;';
+        openModal(successModal); 
+        
+        // This is the fallback line to ensure visibility against any CSS conflict
+        successModal.style.cssText = 'display: block !important; z-index: 1000;';
         
         // Clear the parameter from the URL bar
         if (history.replaceState) {
@@ -155,7 +162,7 @@ function checkInquirySuccess() {
 // Function to close the success modal
 if (closeSuccessButton) {
     closeSuccessButton.onclick = function() {
-        closeModal(successModal); // Use generic function
+        closeModal(successModal);
     };
 }
 
@@ -171,31 +178,6 @@ window.addEventListener('click', function(event) {
         closeModal(successModal);
     }
 });
-
-
-// --- FORM SUBMISSION WITH LOADING ANIMATION ---
-
-if (form) {
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        // 1. Check if the form is valid (native browser validation)
-        if (!form.checkValidity()) {
-            form.reportValidity();
-            return; 
-        }
-
-        // 2. Show the loading modal
-        openModal(loadingModal); 
-
-        // 3. Wait for the delay (1.5 seconds), then force the submission
-        const submissionDelay = 1500; 
-        
-        setTimeout(function() {
-            form.submit();
-        }, submissionDelay);
-    });
-}
 
 // Add the success check to run immediately after script load
 checkInquirySuccess();
