@@ -61,7 +61,7 @@ if (isset($_POST['login'])) {
                 exit();
             } else {
                 // Standard user: Redirect to the regular dashboard
-                header("Location: home.html");
+                header("Location: index.html");
                 exit();
             }
         }
