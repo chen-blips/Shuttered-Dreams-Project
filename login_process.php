@@ -3,7 +3,18 @@
 
 session_start();
 // Include the dedicated database connection file
+require('db.php');
+// FILE: login_process.php (At the very top)
+// ...
 require('db.php'); 
+
+// Add this check:
+if (!isset($conn) || mysqli_connect_errno()) {
+    error_log("Database connection failed.");
+    header("Location: landing.html?login_error=2"); 
+    exit();
+}
+// ...
 
 if (isset($_POST['login'])) {
 
