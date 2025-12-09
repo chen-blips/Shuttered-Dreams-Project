@@ -557,57 +557,42 @@ footer {
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    left: 0;
+    display: none; /* Changed from 'none' to 'flex' */
     top: 0;
-    width: 100%;
+    left: 37%;
     height: 100%;
+    background-color: transparent; /* Dark, semi-transparent background */
+    z-index: 100; /* High z-index to overlay content */
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
     overflow: auto;
-    background-color: rgba(0,0,0,0.6); /* CORRECT: Dark semi-transparent backdrop */
-    padding-top: 60px; /* Provides top space */
-    padding-bottom: 60px; /* Provides bottom space */
     box-sizing: border-box;
-    /* ADD these to truly center the content when display is set to 'flex' or 'block' */
-    display: flex; /* Makes alignment possible */
-    align-items: center; /* Centers vertically */
-    justify-content: center; /* Centers horizontally */
+
+    width: 200%; /* Ensures it's responsive on smaller screens */
+    max-width: 500px; /* **Crucial for minimizing the width** */
+    pointer-events: all;
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe; /* White background for the box */
-    margin: auto;
-    padding: 30px;
-    border: 1px solid #888;
-    
-    /* CRITICAL FIX: Set a max-width for the form box itself (e.g., 400px) */
-    width: 90%; 
-    max-width: 400px; /* Set max width to match the screenshot */
-    
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    position: relative;
-    max-height: calc(100vh - 120px);
-    overflow-y: auto;
-    box-sizing: border-box;
-
-    /* Remove the conflicting transform/opacity from the bottom-most modal-content block */
-    transform: none; 
+    /* Your existing styles (transform, opacity, transition, font-family) */
+    transform: translateY(0); 
     opacity: 1; 
-}
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    font-family: 'Inter', sans-serif;
 
-.container:last-child {
-    background-color: #f1f1f1; /* Add this light gray background */
-    display: flex; /* Use flex to align cancel button and link */
-    justify-content: space-between; /* Space out the button and link */
-    align-items: center;
-    border-bottom-left-radius: 8px; /* Match modal border radius */
-    border-bottom-right-radius: 8px; /* Match modal border radius */
-    margin: -30px; /* Remove container padding overlap */
-    margin-top: 15px; /* Add margin above the bar */
-    padding: 15px 30px; /* Adjust padding for the bar */
+    /* --- ADD THESE STYLES TO MATCH THE IMAGE --- */
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    
+    /* Max-width and width should be on the FORM or the container */
+    width: 100%; /* Take up 100% of the parent modal */
+    padding: 20px; /* Add internal spacing around the form fields */
+    max-width: 400px; /* A reasonable size for the form box */
+    /* Remove the max-width: 500px from the .modal rule if you use this one */
 }
 
 /* Style all input fields */
@@ -655,13 +640,11 @@ input[type=text], input[type=password] {
 .cancel-btn {
     width: auto;
     padding: 10px 18px;
-    background-color: #f44336; /* Red color */
+    background-color: #f44336;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    /* Important: Ensure it has no margin-left, as it's the first element in its container */
-    margin-left: 0; 
 }
 
 /* Extra styles for the form content */
@@ -694,17 +677,6 @@ input[type=text], input[type=password] {
     margin-bottom: 5px;
     font-weight: bold;
     color: #4a4a4a;
-}
-
-.register-link {
-    text-align: center; /* Center the link block */
-    margin-top: 10px;
-    font-size: 0.9em;
-}
-.register-link a {
-    color: #007bff; /* Use blue color for emphasis */
-    font-weight: bold;
-    text-decoration: none;
 }
 
 .modal-overlay:not(.active) .modal-card {
