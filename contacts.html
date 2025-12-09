@@ -46,7 +46,7 @@
                     data-redirect="thankYou.html"  data-error="error.html">  
                     
                 <div>
-                        <label for="brideName" class="form-label">Bride's Full Name:</label>
+                        <label for="brideName" class="form-label" name="brideName">Bride's Full Name:</label>
                         <input type="text" id="brideName" name="brideName" placeholder="Bride's Full Name"
                                 class="form-input form-input-shorter" required
                                 pattern="^[A-Za-z\s.'-]+$"
@@ -54,7 +54,7 @@
                     </div>
 
                     <div>
-                        <label for="groomName" class="form-label">Groom's Full Name:</label>
+                        <label for="groomName" class="form-label" name="groomName">Groom's Full Name:</label>
                         <input type="text" id="groomName" name="groomName" placeholder="Groom's Full Name"
                                 class="form-input form-input-shorter"
                                 pattern="^[A-Za-z\s.'-]+$"
@@ -62,7 +62,7 @@
                     </div>
 
                     <div>
-                        <label for="preferredNames" class="form-label">Preferred Names:</label>
+                        <label for="preferredNames" class="form-label" name="preferredNames">Preferred Names:</label>
                         <input type="text" id="preferredNames" name="preferredNames" placeholder="How should we address you?"
                                 class="form-input"
                                 pattern="^[A-Za-z\s.'-]+$"
@@ -70,13 +70,13 @@
                     </div>
 
                     <div>
-                        <label for="email" class="form-label">Email:</label>
+                        <label for="email" class="form-label" name="email">Email:</label>
                         <input type="email" id="email" name="email" placeholder="Your Email"
                                 class="form-input" required>
                     </div>
 
                     <div>
-                        <label for="phone" class="form-label">Phone:</label>
+                        <label for="phone" class="form-label" name="phone">Phone:</label>
                         <input type="tel" id="phone" name="phone" placeholder="Your Phone Number"
                                 class="form-input"
                                 pattern="^[0-9+\-()\s]*$"
@@ -84,25 +84,25 @@
                     </div>
 
                     <div>
-                        <label for="location" class="form-label">Event Location:</label>
+                        <label for="location" class="form-label" name="location">Event Location:</label>
                         <input type="text" id="location" name="location" placeholder="Wedding Venue or Event Location"
                                 class="form-input" required>
                     </div>
 
                     <div>
-                        <label for="weddingDate" class="form-label">Wedding Date:</label>
+                        <label for="weddingDate" class="form-label" name="weddingDate">Wedding Date:</label>
                         <input type="date" id="weddingDate" name="weddingDate"
                                 class="form-input" required>
                     </div>
 
                     <div>
-                        <label for="time" class="form-label">Ideal Time for Photography (e.g., Ceremony Start):</label>
+                        <label for="time" class="form-label" name="time">Ideal Time for Photography (e.g., Ceremony Start):</label>
                         <input type="time" id="time" name="time"
                                 class="form-input">
                     </div>
 
                     <div>
-                        <label for="package" class="form-label">Preferred Package:</label>
+                        <label for="package" class="form-label" name="package">Preferred Package:</label>
                         <select id="package" name="package" class="form-input" required>
                             <option value="">Select a package</option>
                             <option value="woodster">Woodster</option>
@@ -170,9 +170,9 @@
                     </div>
 
                     <div class="button-container">
-                        <button type="submit" class="submit-inquiry-button">
-                            Submit Inquiry
-                        </button>
+                        <button type="submit" name="submit_inquiry" class="submit-inquiry-button">
+                                Submit Inquiry
+                            </button>
                     </div>
                 </form>
             </div>
