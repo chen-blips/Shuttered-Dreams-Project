@@ -138,6 +138,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // Get the modal element
 const successModal = document.getElementById('successModal');
 const closeSuccessButton = document.getElementById('closeSuccessButton');
+const loadingModal = document.getElementById('loadingModal'); // NEW
+const form = document.querySelector('.form-spacing'); // NEW: Get the form element
 
 /**
  * Checks for the 'inquiry_success=1' parameter in the URL and displays the success modal.
@@ -175,6 +177,32 @@ window.addEventListener('click', function(event) {
         successModal.style.display = 'none';
     }
 });
+
+if (form) {
+    form.addEventListener('submit', function(event) {
+        // Prevent the form from submitting immediately
+        event.preventDefault();
+
+        // Check if the form is valid (native browser validation)
+        if (!form.checkValidity()) {
+            // If not valid, let the browser show errors and stop
+            form.reportValidity();
+            return;
+        }
+
+        // 1. Show the loading modal
+        openModal(loadingModal); 
+
+        // 2. Set the desired delay (e.g., 1500 milliseconds = 1.5 seconds)
+        const submissionDelay = 1500; 
+
+        // 3. Wait for the delay, then force the submission
+        setTimeout(function() {
+            // Re-submit the form programmatically, bypassing this event listener
+            form.submit();
+        }, submissionDelay);
+    });
+}
 
 
 // Add the success check to run when the document is fully loaded
