@@ -6,7 +6,6 @@
     <title>Shuttered Dreams - Admin Dashboard</title>
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@600&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="dashboard-container">
@@ -14,18 +13,18 @@
             
             <div class="logo-casing">
                 <div class="logo-container">
-                    <div class="logo-centered">
-                        <img src="images/SDP_Logo0.1_White.png" alt="Shuttered Dreams Logo" class="sidebar-logo">
-                    </div>
-                    <span class="logo-separator"></span>
-                    <span class="logo-text">SHUTTERED DREAMS<br></br> PROJECT</span>
-                </div>
+                <div class="logo-centered">
+                <img src="images/SDP_Logo0.1_White.png" alt="Shuttered Dreams Logo" class="sidebar-logo">
             </div>
+                <span class="logo-separator"></span>
+                <span class="logo-text">SHUTTERED DREAMS<br> PROJECT</span>
+            </div>
+        </div>
 
             <nav>
                 <ul>
                     <li class="active"><a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
-                    <li><a href="bookings.html"><i class="fas fa-calendar-check"></i> Bookings</a></li>
+                    <li><a href="bookings.php"><i class="fas fa-calendar-check"></i> Bookings</a></li>
                     <li><a href="inquiries.html"><i class="fas fa-envelope"></i> Leads/Inquiries</a></li>
                     <li><a href="galleries.html"><i class="fas fa-images"></i> Galleries & Albums</a></li>
                     <li><a href="clients.html"><i class="fas fa-users"></i> Clients</a></li>

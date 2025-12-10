@@ -325,32 +325,83 @@ tbody tr:hover {
 
 .action-btn:hover {
     background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+}
+
+/* --- Base Style for Action Buttons in the Table --- */
+.action-accept-btn, .action-decline-btn {
+    display: inline-block;
+    padding: 3px 8px;
+    margin: 0 2px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    white-space: nowrap; /* Prevents button text from wrapping */
+}
+
+/* --- Style for the ACCEPT Button (Green for Go/Confirm) --- */
+.action-accept-btn {
+    color: white;
+    background-color: #28a745; /* Bootstrap Success Green */
+    border: 1px solid #28a745;
+}
+
+.action-accept-btn:hover {
+    background-color: #218838;
+}
+
+/* --- Style for the DECLINE Button (Red for Stop/Reject) --- */
+.action-decline-btn {
+    color: white;
+    background-color: #dc3545; /* Bootstrap Danger Red */
+    border: 1px solid #dc3545;
+}
+
+.action-decline-btn:hover {
+    background-color: #c82333;
+}
+
+/* --- Base Tag Styling --- */
+.tag {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75em;
+    font-weight: 700;
+    text-transform: uppercase;
     color: white;
 }
 
-/* Specific Inquiry Acceptance Buttons */
-.accept-btn {
-    background-color: #4CAF50; 
-    color: white;
-    border: none;
-    font-weight: bold;
-}
-.accept-btn:hover {
-    background-color: #388e3c;
+/* --- Specific Status Colors --- */
+.tag-confirmed {
+    background-color: #28a745; /* Success Green */
 }
 
-.reject-btn {
-    background-color: #F44336; 
-    color: white;
-    border: none;
-    font-weight: bold;
+.tag-finance {
+    background-color: #ffc107; /* Yellow/Warning - for Payment Due */
+    color: #333;
 }
-.reject-btn:hover {
-    background-color: #d32f2f;
+
+.tag-low {
+    background-color: #007bff; /* Blue - for Paid in Full/Completed */
 }
-.action-column {
-    text-align: center;
-    width: 200px;
+
+.tag-awaiting {
+    background-color: #6c757d; /* Gray - for Awaiting Quote */
+}
+
+.tag-danger {
+    background-color: #dc3545; /* Red - for Declined/Cancelled */
+}
+
+.tag-warning {
+    background-color: #ffc107; /* Yellow - for Pending/New */
+    color: #333;
+}
+
+.tag-default {
+    background-color: #6c757d;
 }
 
 

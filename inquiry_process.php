@@ -106,3 +106,4 @@ if (isset($_POST['submit_inquiry'])) {
 }
 
 ?>
+

@@ -1,3 +1,40 @@
+<?php
+// === 1. DATABASE CONNECTION ===
+require('inquiry_db.php'); 
+
+// Check if the database connection failed
+if (!isset($conn) || mysqli_connect_errno()) {
+    die("Database Connection Failed: " . mysqli_connect_error());
+}
+
+// === 2. PROCESS STATUS UPDATE LOGIC (Controller Logic) ===
+if (isset($_GET['id']) && isset($_GET['status'])) {
+    
+    $inquiry_id = filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT);
+    $new_status = trim($_GET['status']);
+
+    // Validate ID and Status
+    if (is_numeric($inquiry_id) && $inquiry_id > 0 && in_array($new_status, ['Confirmed', 'Declined'])) {
+        
+        // FIX: Use 'inquiry_id' in the UPDATE query to match the database column name
+        $query = "UPDATE inquiries SET status = ? WHERE inquiry_id = ?"; 
+        $stmt = mysqli_prepare($conn, $query);
+
+        if ($stmt) {
+            mysqli_stmt_bind_param($stmt, 'si', $new_status, $inquiry_id);
+            mysqli_stmt_execute($stmt);
+            mysqli_stmt_close($stmt);
+        } else {
+            error_log("Status Update Prepare Error: " . mysqli_error($conn));
+        }
+        
+        // Redirect to remove the GET parameters from the URL after update
+        header("Location: bookings.php?update_status=success");
+        exit();
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,6 +87,7 @@
                 <table class="bookings-table">
                     <thead>
                         <tr>
+                            <th>No.</th> 
                             <th>Date & Time</th>
                             <th>Client Name</th>
                             <th>Package</th>
@@ -58,9 +96,9 @@
                         </tr>
                     </thead>
                     <tbody> 
-                        <tr>
-                            <td colspan="5" style="text-align: center;">No upcoming bookings found.</td>
-                        </tr>
+                        <?php
+                            include 'booking_process.php'; 
+                        ?>
                     </tbody>          
                 </table>
                 
